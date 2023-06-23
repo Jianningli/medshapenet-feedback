@@ -17,4 +17,7 @@ By [filing a pull request](https://github.com/Jianningli/medshapenet-feedback/pu
 **Collaborators**<br>
 If you forgot you  but you want to be listed, please drop an email to jianningli.me@gmail.com
 
-[Jakob Wasserthal](https://github.com/wasserth/TotalSegmentator),  Clinic of Radiology and Nuclear Medicine, University Hospital Basel, Basel, Switzerland. <br>
+* [Jakob Wasserthal](https://github.com/wasserth/TotalSegmentator),  Clinic of Radiology and Nuclear Medicine, University Hospital Basel, Basel, Switzerland. <br>
+* 
+*
+*
