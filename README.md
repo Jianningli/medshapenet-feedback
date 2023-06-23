@@ -4,7 +4,7 @@
 
 
 **Guidelines**  <br>
-By filing a pull request or [opening an issue]() in this repository, you can:
+By filing a pull request or [opening an issue](https://github.com/Jianningli/medshapenet-feedback/issues) in this repository, you can:
 
 <ul>
   <li>Report Issues</li>
