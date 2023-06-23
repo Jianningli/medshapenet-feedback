@@ -3,7 +3,7 @@ It is an important mean of communication for MedShapeNet developers, users and c
 
 
 **Guidelines**  <br>
-By filing a pull request to this repository, you can:
+By filing a pull request or opening an issue in this repository, you can:
 
 <ul>
   <li>Report Issues</li>
