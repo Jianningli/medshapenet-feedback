@@ -7,10 +7,10 @@
 By [filing a pull request](https://github.com/Jianningli/medshapenet-feedback/pulls) or [opening an issue](https://github.com/Jianningli/medshapenet-feedback/issues) in this repository, you can:
 
 <ul>
-  <li>Report Issues: report to us corrupted/incorrect/unusable shapes you found or request removal of certail shapes if you are the owners of the original datasets [issue]</li>
-  <li>Contribute Shapes: contribute medical shapes extracted from your own datasets [issue]</li>
-  <li>Showcase Research/Applications: describe your research/project by creating a folder in this repository [pull request]</li>
-  <li>Suggest Improvement: tell us the desired functions you want in the [MedShapeNet web interface](https://medshapenet-ikim.streamlit.app/) [issue]</li>
+  <li>**Report Issues:** report to us corrupted/incorrect/unusable shapes you found or request removal of certail shapes if you are the owners of the original datasets [issue]</li>
+  <li>**Contribute Shapes:** contribute medical shapes extracted from your own datasets [issue]</li>
+  <li>**Showcase Research/Applications:** describe your research/project by creating a folder in this repository [pull request]</li>
+  <li>**Suggest Improvement:** tell us the desired functions you want in the [MedShapeNet web interface](https://medshapenet-ikim.streamlit.app/) [issue]</li>
 </ul>
 
 
