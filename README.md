@@ -3,10 +3,10 @@ It is an important mean of communication for MedShapeNet developers, users and c
 
 
 **Guidelines**  <br>
-By filing a pull request, you can:
+By filing a pull request to this repository, you can:
 
 <ul>
-  <li>Report Issues ()</li>
+  <li>Report Issues</li>
   <li>Contribute Shapes</li>
   <li>Showcase Research/Applications</li>
   <li>Suggest Improvement</li>
