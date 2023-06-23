@@ -18,4 +18,6 @@ By filing a pull request or opening an issue in this repository, you can:
 
 
 
-<p style="text-align: center;">Collaborators</p>
+**Collaborators**
+
+[Jakob Wasserthal](https://github.com/wasserth/TotalSegmentator),  Clinic of Radiology and Nuclear Medicine, University Hospital Basel, Basel, Switzerland. <br>
