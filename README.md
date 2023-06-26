@@ -14,22 +14,22 @@ By [filing a pull request](https://github.com/Jianningli/medshapenet-feedback/pu
 
 Following the following templates for issues and pull requests: <br>
 
-***report issues***<br>
+***1. report issues***<br>
 search query of the shape(s):<br>
 description of the problem:<br>
 (optional) screenshot of the problematic shape(s):  <br>
 
-***Contribute Shapes***<br>
+***2. Contribute Shapes***<br>
 link to dataset(s): <br>
 description of the dataset(s): publications, technical report, etc. <br>
 contributor information: name, affiliation, homepage
 listed as a collaborator:  yes/no  <br>
 other comments: <br>
 
-***Showcase Research/Applications***  <br>
+***3. Showcase Research/Applications***  <br>
 follow [this example](https://github.com/Jianningli/medshapenet-feedback/tree/main/example-research-featuring-medshapenet)  <br>
 
-***Suggest Improvement*** <br>
+***4. Suggest Improvement*** <br>
 
 
 
