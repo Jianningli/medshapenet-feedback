@@ -38,11 +38,11 @@ follow [this example](https://github.com/Jianningli/medshapenet-feedback/tree/ma
 
 
 **Collaborators**<br>
-If we forgot you  but you want to be listed, please drop an email to jianningli.me@gmail.com, providing your name, affiliation(s) and a link (optional).
+If we forgot you  but you want to be listed, please drop an email Jianning Li (jianningli.me@gmail.com), providing your name, affiliation(s) and a link (optional).
 
 * [Jakob Wasserthal](https://github.com/wasserth/TotalSegmentator),  Clinic of Radiology and Nuclear Medicine, University Hospital Basel, Basel, Switzerland. <br>
 * 
 *
 *
 
-Contact: Jianning Li (jianningli.me@gmail.com)
+
