@@ -1,5 +1,6 @@
 under construction...
 
+![gallery](assests/shape_gallery.png)
 
 &emsp;  &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp;  **[MedShapeNet: A Large-scale Dataset of 3D Medical Shapes](https://medshapenet-ikim.streamlit.app/)** 
 
