@@ -1,4 +1,3 @@
-under construction...
 
 ![gallery](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/shape_gallery.png)
 
