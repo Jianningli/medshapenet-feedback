@@ -43,7 +43,6 @@ If you use MedShapeNet in your research, please cite MedShapeNet as:
   title={MedShapeNet - A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
   author={Li, Jianning and Pepe, Antonio and Gsaxner, Christina and others},
   journal={arXiv preprint arXiv:2308.16139},
-  doi={https://doi.org/10.48550/arXiv.2308.16139},
   year={2023}
 }
 ```
