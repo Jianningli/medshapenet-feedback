@@ -25,8 +25,7 @@ description of the problem:<br>
 ***2. contribute Shapes***<br>
 link to dataset(s): <br>
 description of the dataset(s): publications, technical report, etc. <br>
-contributor information: name, affiliation, homepage
-listed as a collaborator:  yes/no  <br>
+contributor information: name, affiliation, homepage <br>
 other comments: <br>
 
 ***3. showcase Research/Applications***  <br>
@@ -37,8 +36,7 @@ follow [this example](https://github.com/Jianningli/medshapenet-feedback/tree/ma
 
 **References**  <br>
 
-If you find MedShapeNet useful, please cite MedShapeNet as:
-
+If you use MedShapeNet in your research, please cite MedShapeNet as:
 
 ```
 @article{li2020baseline,
