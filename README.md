@@ -35,12 +35,26 @@ follow [this example](https://github.com/Jianningli/medshapenet-feedback/tree/ma
 ***4. Suggest Improvement*** <br>
 
 
+**References**  <br>
 
+If you find MedShapeNet useful, 
+
+````
+```
+@article{li2020baseline,
+  title={MedShapeNet - A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
+  author={Li, Jianning and Pepe, Antonio and Gsaxner, Christina and others},
+  journal={arXiv preprint arXiv:2308.16139},
+  doi={https://doi.org/10.48550/arXiv.2308.16139},
+  year={2023}
+}
+```
+````
 
 **Collaborators**<br>
 If we forgot you  but you want to be listed, please drop an email Jianning Li (jianningli.me@gmail.com), providing your name, affiliation(s) and a link (optional).
 
-![paper](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/paper.png)
+
 
 * [Jakob Wasserthal](https://github.com/wasserth/TotalSegmentator),  Clinic of Radiology and Nuclear Medicine, University Hospital Basel, Basel, Switzerland. <br>
 * [Human Connectome Project (HCP)](https://www.humanconnectome.org/study/hcp-young-adult)
