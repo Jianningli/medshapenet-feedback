@@ -22,24 +22,24 @@ search query of the shape(s):<br>
 description of the problem:<br>
 (optional) screenshot of the problematic shape(s):  <br>
 
-***2. Contribute Shapes***<br>
+***2. contribute Shapes***<br>
 link to dataset(s): <br>
 description of the dataset(s): publications, technical report, etc. <br>
 contributor information: name, affiliation, homepage
 listed as a collaborator:  yes/no  <br>
 other comments: <br>
 
-***3. Showcase Research/Applications***  <br>
+***3. showcase Research/Applications***  <br>
 follow [this example](https://github.com/Jianningli/medshapenet-feedback/tree/main/example-research-featuring-medshapenet)  <br>
 
-***4. Suggest Improvement*** <br>
+***4. suggest Improvement*** <br>
 
 
 **References**  <br>
 
-If you find MedShapeNet useful, 
+If you find MedShapeNet useful, please cite MedShapeNet as:
 
-````
+
 ```
 @article{li2020baseline,
   title={MedShapeNet - A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
@@ -49,16 +49,12 @@ If you find MedShapeNet useful,
   year={2023}
 }
 ```
-````
-
-**Collaborators**<br>
-If we forgot you  but you want to be listed, please drop an email Jianning Li (jianningli.me@gmail.com), providing your name, affiliation(s) and a link (optional).
 
 
 
-* [Jakob Wasserthal](https://github.com/wasserth/TotalSegmentator),  Clinic of Radiology and Nuclear Medicine, University Hospital Basel, Basel, Switzerland. <br>
-* [Human Connectome Project (HCP)](https://www.humanconnectome.org/study/hcp-young-adult)
-*
-*
+
+**contact**<br>
+Contact Jianning Li (jianningli.me@gmail.com) for any questions related to MedShapeNet.
+
 
 
