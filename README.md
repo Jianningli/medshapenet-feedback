@@ -29,7 +29,7 @@ contributor information: name, affiliation, homepage <br>
 other comments: <br>
 
 ***3. showcase Research/Applications***  <br>
-follow [this example](https://github.com/Jianningli/medshapenet-feedback/tree/main/example-research-featuring-medshapenet)  <br>
+Formatting is flexible. You can find existing examples  [here](https://github.com/Jianningli/medshapenet-feedback/tree/main/anatomy-completor) and [here](https://github.com/Jianningli/medshapenet-feedback/tree/main/forensic-facial-reconstruction)  <br>
 
 ***4. suggest Improvement*** <br>
 
