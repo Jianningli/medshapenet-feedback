@@ -4,7 +4,7 @@
 
 ### Overview
 
-**Title:**:  <br> 
+**Title:** <br> 
 **Link to paper:** https://arxiv.org/abs/2308.16139 <br> 
 **Shape queries:**<br>
 **Link to benchmark dataset:** <br> 
