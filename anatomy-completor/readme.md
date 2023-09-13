@@ -18,7 +18,9 @@
 
 ![Alt text](./assests/multi_class_anatomy.png)
 
+create the benchmark dataset
 
+![Alt text](./assests/completor.png)
 
 #### reconstructing a single anatomy
 
