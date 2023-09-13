@@ -14,13 +14,15 @@
 
 
 #### multi-class anatomy completion
-12 anatomies: lung, heart, spleen, stomach, pancreas, spine, rib, cage, liver, kidney, aorta, autochthon muscles, pulmonary artery
+12 anatomies (i.e., 12 classes): lung, heart, spleen, stomach, pancreas, spine, rib, cage, liver, kidney, aorta, autochthon muscles, pulmonary artery
 
 ![Alt text](./assests/multi_class_anatomy.png)
 
-create the benchmark dataset: input -  ground truth - 12 ana
-training samples: 18x10=180 (18 )
-test samples: 27x10=270
+create the benchmark dataset: create 10 incomplete sets by removing random anatomies from the 12 anatomies   <br>
+
+input - incomplete anatomy set, ground truth - complete anatomy set containing 12 anatomies <br>
+
+training samples: 18x10=180 <br> test samples: 27x10=270
 
 ![Alt text](./assests/completor.png)
 
