@@ -14,7 +14,7 @@
 ### Code
 
 
-#### (1). multi-class anatomy completion
+#### derive the benchmark dataset
 **12 anatomies (i.e., 12 classes):** lung, heart, spleen, stomach, pancreas, spine, rib, cage, liver, kidney, aorta, autochthon muscles, pulmonary artery
 
 ![Alt text](./assests/multi_class_anatomy.png)
@@ -26,18 +26,16 @@
 ![Alt text](./assests/completor.png)
 
 
-**results** (left: input, right: reconstruction, shown in both 3D and coronal views)
+
+#### derive the benchmark dataset
+
+
+
+#### results
+
+(left: input, right: reconstruction, shown in both 3D and coronal views)
 
 ![Alt text](./assests/results.png)
-
-#### (2). reconstructing a single anatomy
-
-
-
-
-
-
-#### (3). reconstructing anatomies from skeleton
 
 
 
