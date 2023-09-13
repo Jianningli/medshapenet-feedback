@@ -7,8 +7,7 @@
 **Title:**: A Multi-class Completion Framework for 3D Anatomy Reconstruction  <br> 
 **Link to paper:** https://arxiv.org/abs/2309.04956 <br> 
 **Link to benchmark dataset:** <br> 
-**Data structure:** __voxel occupancy grid__ | point cloud | mesh | others <br> 
-
+**Data structure:** __voxel occupancy grid__ | point cloud | mesh | others <br>
 
 
 ### Code
