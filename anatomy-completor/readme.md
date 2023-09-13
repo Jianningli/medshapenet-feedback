@@ -14,7 +14,7 @@
 ### Code
 
 
-#### Derive the benchmark dataset
+#### (1) Derive the benchmark dataset
 **12 anatomies (i.e., 12 classes):** lung, heart, spleen, stomach, pancreas, spine, rib, cage, liver, kidney, aorta, autochthon muscles, pulmonary artery
 Create 10 incomplete sets (input) by removing random anatomies from the 12 anatomies (ground truth). **training samples:** 18x10=180, **test samples:** 27x10=270
 
@@ -25,11 +25,11 @@ Create 10 incomplete sets (input) by removing random anatomies from the 12 anato
 
 
 
-#### Train a 3D deep model
+#### (2) Train a 3D deep model
 
 
 
-#### Results
+#### (3) Results
 
 (left: input, right: reconstruction, shown in both 3D and coronal views)
 
