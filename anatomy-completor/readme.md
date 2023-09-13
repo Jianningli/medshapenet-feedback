@@ -25,7 +25,7 @@
 ![Alt text](./assests/completor.png)
 
 
-results (left: input, right: reconstruction, both shown in 3D and coronal views)
+**results** (left: input, right: reconstruction, both shown in 3D and coronal views)
 
 ![Alt text](./assests/results.png)
 
