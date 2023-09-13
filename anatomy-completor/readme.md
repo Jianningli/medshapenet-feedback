@@ -27,7 +27,7 @@ training samples: 18x10=180 <br> test samples: 27x10=270
 ![Alt text](./assests/completor.png)
 
 
-results
+results (left: input, right: reconstruction)
 
 ![Alt text](./assests/results.png)
 
