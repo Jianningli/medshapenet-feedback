@@ -18,9 +18,8 @@
 
 ![Alt text](./assests/multi_class_anatomy.png)
 
-create the benchmark dataset: create 10 incomplete sets by removing random anatomies from the 12 anatomies   <br>
+create the benchmark dataset: create 10 incomplete sets (input) by removing random anatomies from the 12 anatomies (ground truth)   <br>
 
-input - incomplete anatomy set, ground truth - complete anatomy set containing 12 anatomies <br>
 
 training samples: 18x10=180 <br> test samples: 27x10=270
 
