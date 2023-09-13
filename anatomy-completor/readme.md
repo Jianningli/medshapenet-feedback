@@ -2,7 +2,7 @@
 ## Anatomy Completor
 
 
-### overview
+### Overview
 
 **Title:**: A Multi-class Completion Framework for 3D Anatomy Reconstruction  <br> 
 **Link to paper:** https://arxiv.org/abs/2309.04956 <br> 
@@ -25,6 +25,11 @@ input - incomplete anatomy set, ground truth - complete anatomy set containing 1
 training samples: 18x10=180 <br> test samples: 27x10=270
 
 ![Alt text](./assests/completor.png)
+
+
+results
+
+![Alt text](./assests/results.png)
 
 #### reconstructing a single anatomy
 
