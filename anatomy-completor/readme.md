@@ -8,7 +8,7 @@
 **Link to paper:** https://arxiv.org/abs/2309.04956 <br> 
 **Shape queries:**<br>
 **Link to benchmark dataset:** <br> 
-**Data structure:** <ins>__voxel occupancy grid__</ins> | point cloud | mesh | others <br>
+**Data structure:** <ins>voxel occupancy grid</ins> | point cloud | mesh | others <br>
 
 
 ### Code
