@@ -12,7 +12,7 @@ repository for paper "A Multi-class Completion Framework for 3D Anatomy Reconstr
 
 #### multi-class anatomy completion
 
-
+[![Alt text](./assests/multi_class_anatomy.png)]
 
 
 
