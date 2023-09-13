@@ -13,7 +13,7 @@
 ### Code
 
 
-#### multi-class anatomy completion
+#### 1. multi-class anatomy completion
 **12 anatomies (i.e., 12 classes):** lung, heart, spleen, stomach, pancreas, spine, rib, cage, liver, kidney, aorta, autochthon muscles, pulmonary artery
 
 ![Alt text](./assests/multi_class_anatomy.png)
@@ -29,14 +29,14 @@ results (left: input, right: reconstruction, both shown in 3D and coronal views)
 
 ![Alt text](./assests/results.png)
 
-#### reconstructing a single anatomy
+#### 2. reconstructing a single anatomy
 
 
 
 
 
 
-#### reconstructing anatomies from skeleton
+#### 3. reconstructing anatomies from skeleton
 
 
 
