@@ -1,3 +1,9 @@
+### Table of Contents
+**[Contribution Guidelines](#Guidelines)**<br>
+**[References](#References)**<br>
+
+
+
 
 ![gallery](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/shape_gallery.png)
 
