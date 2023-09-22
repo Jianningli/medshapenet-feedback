@@ -1,3 +1,5 @@
+&emsp;  &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp;  **[MedShapeNet: A Large-scale Dataset of 3D Medical Shapes](https://arxiv.org/pdf/2308.16139.pdf)** 
+
 ### Table of Contents
 **[Overview](#Overview)**<br>
 **[Contribution Guidelines](#Guidelines)**<br>
@@ -14,7 +16,7 @@
 
 ![gallery](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/shape_gallery.png)
 
-&emsp;  &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp;  **[MedShapeNet: A Large-scale Dataset of 3D Medical Shapes](https://arxiv.org/pdf/2308.16139.pdf)** 
+
 
 ## Overview
 
