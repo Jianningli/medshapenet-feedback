@@ -1,4 +1,5 @@
 ### Table of Contents
+**[Overview](#Overview)**<br>
 **[Contribution Guidelines](#Guidelines)**<br>
 **[References](#References)**<br>
 
@@ -9,10 +10,12 @@
 
 &emsp;  &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp;  **[MedShapeNet: A Large-scale Dataset of 3D Medical Shapes](https://arxiv.org/pdf/2308.16139.pdf)** 
 
+## Overview
+
 **MEDSHAPENET FEEDBACK** is a platform for researchers to contribute shapes, provide feedbacks (e.g., report corrupted shapes for removal, suggest improvements) and showcase their own research/applications utilizing MedShapeNet. It is an important mean of communication for MedShapeNet developers, users and contributors for continuously refining the database and promoting the translation of shape-realted methods from computer vision to medical applications. Shape contributors have the chance of being listed as collaborators of the MedShapeNet project upon request. For more detail about the project, please check out our [paper](https://arxiv.org/pdf/2308.16139.pdf) and [website](https://medshapenet-ikim.streamlit.app/).
 
 
-**Guidelines**  <br>
+## Guidelines 
 By [filing a pull request](https://github.com/Jianningli/medshapenet-feedback/pulls) or [opening an issue](https://github.com/Jianningli/medshapenet-feedback/issues) in this repository, you can:
 
 
@@ -40,7 +43,7 @@ Formatting is flexible. You can find existing examples  [here](https://github.co
 ***4. suggest Improvement*** <br>
 
 
-**References**  <br>
+## References 
 
 If you use MedShapeNet in your research, please cite MedShapeNet as:
 
@@ -53,14 +56,14 @@ If you use MedShapeNet in your research, please cite MedShapeNet as:
 }
 ```
 
-**Contributors**<br>
+## Contributors 
 Refer to our [MedShapeNet Paper](https://arxiv.org/pdf/2308.16139.pdf) for a full list of contributors of the project.
 
-**List of Related Publications**<br>
+## List of Related Publications
 
 Refer to the [publication page](https://proj-page.github.io/medshapenet_publications.html).
 
-**Contact**<br>
+## Contact 
 Contact Jianning Li (jianningli.me@gmail.com) for any questions related to MedShapeNet.
 
 
