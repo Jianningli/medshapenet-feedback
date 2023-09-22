@@ -50,6 +50,9 @@ If you use MedShapeNet in your research, please cite MedShapeNet as:
 **Contributors**<br>
 Refer to our [MedShapeNet Paper](https://arxiv.org/pdf/2308.16139.pdf) for a full list of contributors of the project.
 
+**List of Related Publications**<br>
+
+Refer to the [publication page](https://proj-page.github.io/medshapenet_publications.html).
 
 **Contact**<br>
 Contact Jianning Li (jianningli.me@gmail.com) for any questions related to MedShapeNet.
