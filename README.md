@@ -1,4 +1,4 @@
-&emsp;  &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp; &emsp;  **MedShapeNet: A Large-scale Dataset of 3D Medical Shapes** ([paper](https://arxiv.org/pdf/2308.16139.pdf), [presentation](http://jianningli.me/pdfs/MedShapeNet%20JHU%20Presentation%20Jianning.pdf), [website](https://medshapenet-ikim.streamlit.app/))
+&emsp;  &emsp; &emsp;  &emsp;  &emsp;  **MedShapeNet: A Large-scale Dataset of 3D Medical Shapes** ([paper](https://arxiv.org/pdf/2308.16139.pdf), [presentation](http://jianningli.me/pdfs/MedShapeNet%20JHU%20Presentation%20Jianning.pdf), [website](https://medshapenet-ikim.streamlit.app/))
 
 ### Table of Contents
 **[Overview](#Overview)**<br>
