@@ -1,10 +1,16 @@
 ### Table of Contents
 **[Overview](#Overview)**<br>
 **[Contribution Guidelines](#Guidelines)**<br>
+
+**[report issues](#report-issues)**<br>
+**[contribute shapes](#contribute-shapes)**<br>
+**[showcase your research](#showcase-your-research)**<br>
+**[suggest improvement](#suggest-improvement)**<br>
+
 **[References](#References)**<br>
-
-
-
+**[Contributors](#Contributors)**<br>
+**[List of Related Publications](#List-of-Related-Publications)**<br>
+**[Contact](#Contact)**<br>
 
 ![gallery](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/shape_gallery.png)
 
@@ -26,21 +32,21 @@ By [filing a pull request](https://github.com/Jianningli/medshapenet-feedback/pu
 
 Follow the following templates for issues and pull requests: <br>
 
-***1. report issues***<br>
+### report issues
 search query of the shape(s):<br>
 description of the problem:<br>
 (optional) screenshot of the problematic shape(s):  <br>
 
-***2. contribute Shapes***<br>
+### contribute shapes
 link to dataset(s): <br>
 description of the dataset(s): publications, technical report, etc. <br>
 contributor information: name, affiliation, homepage <br>
 other comments: <br>
 
-***3. showcase Research/Applications***  <br>
+### showcase your research
 Formatting is flexible. You can find existing examples  [here](https://github.com/Jianningli/medshapenet-feedback/tree/main/anatomy-completor) and [here](https://github.com/Jianningli/medshapenet-feedback/tree/main/forensic-facial-reconstruction)  <br>
 
-***4. suggest Improvement*** <br>
+### suggest improvement
 
 
 ## References 
