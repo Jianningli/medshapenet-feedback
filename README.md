@@ -56,9 +56,9 @@ Formatting is flexible. You can find existing examples  [here](https://github.co
 If you use MedShapeNet in your research, please cite MedShapeNet as:
 
 ```
-@article{li2020baseline,
-  title={MedShapeNet - A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
-  author={Li, Jianning and Pepe, Antonio and Gsaxner, Christina and others},
+@article{li2023medshapenet,
+  title={MedShapeNet--A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
+  author={Li, Jianning and Pepe, Antonio and Gsaxner, Christina and Luijten, Gijs and Jin, Yuan and Ambigapathy, Narmada and Nasca, Enrico and Solak, Naida and Melito, Gian Marco and Memon, Afaque R and others},
   journal={arXiv preprint arXiv:2308.16139},
   year={2023}
 }
