@@ -35,6 +35,7 @@
 
 
 ### Bibtex
+If you use the dataset, please cite the following paper:
 
 ```
 @article{li2020baseline,
