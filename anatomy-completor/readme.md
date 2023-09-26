@@ -40,7 +40,7 @@ Create 10 incomplete sets (input) by removing random anatomies from the 12 anato
 
 
 ### Bibtex
-If you use the codes and/or dataset, please cite the following paper:
+If you use the codes and/or dataset, please cite the following papers:
 
 ```
 @article{li2023anatomy,
