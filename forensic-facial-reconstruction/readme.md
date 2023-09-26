@@ -9,7 +9,7 @@
 | **Title:**  | Automatic Forensic Facial Reconstruction   |
 | **Link to paper:** | [Paper](https://arxiv.org/abs/2308.16139)    |
 | **Benchmark:**    | Forensic Facial Reconstruction Benchmark    |
-| **Link to benchmark dataset:**    | [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub)    |
+| **Link to benchmark dataset:**    | [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub/download)    |
 | **Data structure:**| voxel occupancy grid  |
 
 
