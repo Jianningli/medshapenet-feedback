@@ -6,7 +6,7 @@
 | **Title:**    | A Multi-class Completion Framework for 3D Anatomy Reconstruction |
 | -------- | ------- |
 | **Link to paper:** | [Paper](https://arxiv.org/abs/2309.04956)    |
-| **Benchmark:**    | Forensic Facial Reconstruction Benchmark    |
+| **Benchmark:**    | Multi-class Anatomy Completor    |
 | **Link to benchmark dataset:**    |     |
 | **Data structure:**| voxel occupancy grid  |
 
