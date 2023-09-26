@@ -11,9 +11,13 @@
 **Data structure:** <ins>voxel occupancy grid</ins> | point cloud | mesh | others <br>
 
 
-
-
-
+| Month    | Savings |
+| -------- | ------- |
+| **Title:**  | $250    |
+| **Link to paper:** | [Paper](https://arxiv.org/abs/2308.16139)    |
+| **Benchmark:**    | Forensic Facial Reconstruction Benchmark    |
+| **Link to benchmark dataset:**    | [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub)    |
+| **Data structure:**| voxel occupancy grid  |
 
 
 
