@@ -4,8 +4,6 @@
 
 ### Overview
 
-| Month    | Savings |
-| -------- | ------- |
 | **Title:**  | Automatic Forensic Facial Reconstruction   |
 | **Link to paper:** | [Paper](https://arxiv.org/abs/2308.16139)    |
 | **Benchmark:**    | Forensic Facial Reconstruction Benchmark    |
