@@ -1,15 +1,14 @@
 
 ## Anatomy Completor
 
-
 ### Overview
 
-**Title:**: A Multi-class Completion Framework for 3D Anatomy Reconstruction  <br> 
-**Link to paper:** https://arxiv.org/abs/2309.04956 <br> 
-**Shape queries:**<br>
-**Link to benchmark dataset:** <br> 
-**Data structure:** <ins>voxel occupancy grid</ins> | point cloud | mesh | others <br>
-
+| **Title:**    | A Multi-class Completion Framework for 3D Anatomy Reconstruction |
+| -------- | ------- |
+| **Link to paper:** | [Paper](https://arxiv.org/abs/2309.04956)    |
+| **Benchmark:**    | Forensic Facial Reconstruction Benchmark    |
+| **Link to benchmark dataset:**    |     |
+| **Data structure:**| voxel occupancy grid  |
 
 ### Code
 
