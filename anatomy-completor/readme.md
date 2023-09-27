@@ -11,6 +11,11 @@
 | **Data structure:**| voxel occupancy grid  |
 
 
+### Dataset creation:
+
+![]()
+
+
 ### Bibtex
 If you use the codes and/or dataset, please cite the following papers:
 
