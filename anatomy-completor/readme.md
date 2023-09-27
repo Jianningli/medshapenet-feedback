@@ -1,7 +1,7 @@
 
-## Multi-class Anatomy Completor: Generating whole-body labels given partial/sparse manual annotations
+### Multi-class Anatomy Completor: Generating whole-body labels given partial/sparse manual annotations
 
-### Overview
+#### Overview
 
 | **Title:**    | A Multi-class Completion Framework for 3D Anatomy Reconstruction |
 | -------- | ------- |
@@ -11,17 +11,17 @@
 | **Data structure:**| voxel occupancy grid  |
 
 
-### Dataset creation: extract 12 anatomies and randomly remove some of them to create partial labels
+#### Dataset creation: extract 12 anatomies and randomly remove some of them to create partial labels
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_dataset.png)
 
-### Example results on a test case
+#### Example results on a test case
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_results.png)
 
-### Methods:  
+#### Methods:  A 3D U-Net style network, which takes partial and full labels as input and ground truth, respectively
 
-### Bibtex
+#### Bibtex
 If you use the codes and/or dataset, please cite the following papers:
 
 ```
