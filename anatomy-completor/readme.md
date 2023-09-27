@@ -1,5 +1,5 @@
 
-## Anatomy Completor
+## Multi-class Anatomy Completor: Generating whole-body labels given partial/sparse manual annotations
 
 ### Overview
 
@@ -11,9 +11,9 @@
 | **Data structure:**| voxel occupancy grid  |
 
 
-### Dataset creation:
+### Dataset creation: 
 
-![]()
+![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_dataset.png)
 
 
 ### Bibtex
