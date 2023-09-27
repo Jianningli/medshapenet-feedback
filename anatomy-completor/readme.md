@@ -11,10 +11,13 @@
 | **Data structure:**| voxel occupancy grid  |
 
 
-### Dataset creation: extract 12 anatomies from whole-body segmentations, and randomly remove some of them to create partial labels
+### Dataset creation: extract 12 anatomies and randomly remove some of them to create partial labels
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_dataset.png)
 
+### Example results on a test case
+
+![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_results.png)
 
 ### Methods:  
 
