@@ -1,5 +1,5 @@
 
-### Multi-class Anatomy Completor: Generating whole-body labels given partial/sparse manual annotations
+### Multi-class Anatomy Completor: Generating whole-body pseudo labels given partial/sparse manual annotations
 
 #### Overview
 
@@ -15,11 +15,16 @@
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_dataset.png)
 
+#### Methods:  A 3D U-Net style network, which takes partial and full labels as input and ground truth, respectively
+Use the network to learn:<br>
+*a many-to-one mapping: multiple sets of partial labels correspond to one set full labels
+*a one-to-one residual mapping: one set of partial labels correspond to one set of missing labels
+
 #### Example results on a test case
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_results.png)
 
-#### Methods:  A 3D U-Net style network, which takes partial and full labels as input and ground truth, respectively
+
 
 #### Bibtex
 If you use the codes and/or dataset, please cite the following papers:
