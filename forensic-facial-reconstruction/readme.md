@@ -24,7 +24,7 @@
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/facial_reconstruction_results.png)
 
 
-#### What if the skull is damaged? Repair the skull first before facial reconstruction
+#### What if the skull is damaged? [Repair the skull](https://github.com/Jianningli/medshapenet-feedback/tree/main/skull-reconstruction) first before facial reconstruction
 
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/skull_reconstruction.png)
