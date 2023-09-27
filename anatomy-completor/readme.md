@@ -26,7 +26,14 @@ Use the network to learn:<br>
 * a many-to-one mapping: multiple sets of partial labels correspond to one set full labels
 * a one-to-one residual mapping: one set of partial labels correspond to one set of missing labels
 
-#### Example results on a test case
+#### Example results 
+
+
+* Single-class reconstruction:
+![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/single_class_results.png)
+
+
+* Multi-class reconstruction:
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_results.png)
 
