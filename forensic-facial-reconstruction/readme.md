@@ -19,7 +19,7 @@
 
 
 
-#### 
+#### example reconstruction on a test skull
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/facial_reconstruction_results.png)
 
