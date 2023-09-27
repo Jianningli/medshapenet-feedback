@@ -12,20 +12,20 @@
 | **Data structure:**| voxel occupancy grid  |
 
 
-#### Data creation: extract the skull and facial structures (skin, fat, etc) from a whole-body segmentation
+### Data creation: extract the skull and facial structures (skin, fat, etc) from a whole-body segmentation
 
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/forensic_facial_reconstruction.png)
 
 
-#### Methods: 3D U-Net style networks, which take the skull as input and the face as the labels
+### Methods: 3D U-Net style networks, which take the skull as input and the face as the labels
 
-#### Example reconstruction on a test skull
+### Example reconstruction on a test skull
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/facial_reconstruction_results.png)
 
 
-#### What if the skull is damaged? [Repair the skull](https://github.com/Jianningli/medshapenet-feedback/tree/main/skull-reconstruction) first before facial reconstruction
+### What if the skull is damaged? [Repair the skull](https://github.com/Jianningli/medshapenet-feedback/tree/main/skull-reconstruction) first before facial reconstruction
 
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/skull_reconstruction.png)
