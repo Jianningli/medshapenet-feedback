@@ -11,7 +11,13 @@
 | **Data structure:**| voxel occupancy grid  |
 
 
-#### Dataset creation: extract 12 anatomies and randomly remove some of them to create partial labels
+#### Dataset creation: 
+
+* Single-class dataset: treat the 104 anatomies as a whole (class '1'), and remove anatomies based on volume ratios
+
+![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/single_class_dataset.png)
+
+* Multi-class dataset: extract 12 anatomies and randomly remove some of them to create partial labels
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_dataset.png)
 
