@@ -7,7 +7,7 @@
 | -------- | ------- |
 | **Link to paper:** | [Paper](https://arxiv.org/abs/2309.04956)    |
 | **Benchmark:**    | Multi-class Anatomy Completor    |
-| **Link to benchmark dataset:**    |     |
+| **Link to benchmark dataset:**    |   [Download](https://uni-duisburg-essen.sciebo.de/s/YTotoXPOwzANnXl)  |
 | **Data structure:**| voxel occupancy grid  |
 
 
