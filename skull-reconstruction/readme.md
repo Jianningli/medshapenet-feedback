@@ -1,4 +1,4 @@
-## skull reconstruction: restoring the full skull when facial bones, cranium, etc are damaged  
+## Skull reconstruction: restoring the full skull when facial bones, cranium, etc are damaged  
 
 
 #### Overview
