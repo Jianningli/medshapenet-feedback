@@ -1,15 +1,26 @@
 ## skull reconstruction: restoring the full skull when facial bones, cranium, etc are damaged  
 
 
+#### Overview
 
-
-
-
-
-
-
+| **Title:**    | A Multi-class Completion Framework for 3D Anatomy Reconstruction |
+| -------- | ------- |
+| **Link to paper:** | [Paper](https://arxiv.org/abs/2309.04956)    |
+| **Benchmark:**    | Multi-class Anatomy Completor    |
+| **Link to benchmark dataset:**    |   [Download](https://dl.dropboxusercontent.com/s/2v09h0vt0k3x9l3/training_set.zip?dl=0) (training) <br> [Download](https://dl.dropboxusercontent.com/s/me3yh4azub7jbpn/test_set_for_participants.zip?dl=0) (test)|
+| **Data structure:**| voxel occupancy grid  |
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/skull_reconstruction.png)
+
+#### Dataset creation: 
+
+
+
+
+
+
+
+
 
 
 
