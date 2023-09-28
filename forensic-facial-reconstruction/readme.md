@@ -18,7 +18,7 @@
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/forensic_facial_reconstruction.png)
 
 
-### Methods: 3D U-Net style networks, which take the skull as input and the face as the labels
+### Methods: 3D U-Net style networks, which take a skull as input and the corresponding face as the label
 
 ### Example reconstruction on a test skull
 
