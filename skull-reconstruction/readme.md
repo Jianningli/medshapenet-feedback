@@ -5,7 +5,7 @@
 
 | **Title:**    | Automatic Skull Reconstruction |
 | -------- | ------- |
-| **Link to paper:** | [Paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841523001251)    |
+| **Link to paper:** | [Paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841523001251)   <br> [Paper](https://link.springer.com/chapter/10.1007/978-3-031-25046-0_7)   |
 | **Benchmark:**    | Skull Reconstruction   |
 | **Link to benchmark dataset:**    | [Download](https://uni-duisburg-essen.sciebo.de/s/04LtiVuuUxL4ybT) (facial training and test) <br> [Download](https://dl.dropboxusercontent.com/s/2v09h0vt0k3x9l3/training_set.zip?dl=0) ( cranial training) <br> [Download](https://dl.dropboxusercontent.com/s/me3yh4azub7jbpn/test_set_for_participants.zip?dl=0) (cranial test 1) <br> [Download](https://dl.dropboxusercontent.com/s/7ijvewjw4lnjyjv/additional_test_set_for_participants.zip?dl=0) (cranial test 2)  <br> [Download](https://figshare.com/articles/dataset/MUG500_Repository/9616319?file=29011878) (cranial test 3  (craniotomy))|
 | **Data structure:**| voxel occupancy grid  |
@@ -61,6 +61,15 @@
   pages={102865},
   year={2023},
   publisher={Elsevier}
+}
+
+@inproceedings{li2022training,
+  title={Training $\beta$-VAE by aggregating a learned Gaussian posterior with a decoupled decoder},
+  author={Li, Jianning and Fragemann, Jana and Ahmadi, Seyed-Ahmad and Kleesiek, Jens and Egger, Jan},
+  booktitle={MICCAI Workshop on Medical Applications with Disentanglements},
+  pages={70--92},
+  year={2022},
+  organization={Springer}
 }
 
 @article{li2020baseline,
