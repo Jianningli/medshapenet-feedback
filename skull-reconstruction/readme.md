@@ -14,6 +14,11 @@
 
 
 
+#### Data Creation: Remove (part of) facial bones or cranium  from healthy skulls
+
+
+
+#### Methods: Use U-Net style networks that take partial skulls as input and the original skulls as the ground truth  
 
 
 
@@ -36,12 +41,7 @@
 
 
 
-
-
-
-
-
-
+#### Bibtex
 ```
 @article{li2021autoimplant,
   title={AutoImplant 2020-first MICCAI challenge on automatic cranial implant design},
