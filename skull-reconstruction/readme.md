@@ -3,7 +3,7 @@
 
 #### Overview
 
-| **Title:**    | A Multi-class Completion Framework for 3D Anatomy Reconstruction |
+| **Title:**    | Automatic Skull Reconstruction |
 | -------- | ------- |
 | **Link to paper:** | [Paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841523001251)    |
 | **Benchmark:**    | Skull Reconstruction   |
@@ -12,7 +12,6 @@
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/skull_reconstruction.png)
 
-#### Dataset creation: 
 
 
 
