@@ -14,7 +14,7 @@
 **[List of Related Publications](#List-of-Related-Publications)**<br>
 **[Contact](#Contact)**<br>
 
-![gallery](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/shape_gallery.png)
+![gallery](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/github.png)
 
 
 
