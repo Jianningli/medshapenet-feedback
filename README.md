@@ -20,7 +20,7 @@
 
 ## Overview
 
-**MEDSHAPENET FEEDBACK** is a platform for researchers to contribute shapes, provide feedbacks (e.g., report corrupted shapes for removal, suggest improvements) and showcase their own research/applications utilizing MedShapeNet. It is an important mean of communication for MedShapeNet developers, users and contributors for continuously refining the database and promoting the translation of shape-realted methods from computer vision to medical applications. Shape contributors have the chance of being listed as collaborators of the MedShapeNet project upon request. For more detail about the project, please check out our [paper](https://arxiv.org/pdf/2308.16139.pdf) and [website](https://medshapenet-ikim.streamlit.app/).
+**MEDSHAPENET FEEDBACK** is a platform for researchers to contribute shapes, provide feedbacks (e.g., report corrupted shapes for removal, suggest improvements) and showcase their own research/applications utilizing MedShapeNet. It is an important mean of communication for MedShapeNet developers, users and contributors for continuously refining the database and promoting the translation of shape-realted methods from computer vision to medical applications. Shape contributors have the chance of being listed as collaborators of the MedShapeNet project upon request. For more details about the project, please check out our [paper](https://arxiv.org/pdf/2308.16139.pdf) and [website](https://medshapenet-ikim.streamlit.app/).
 
 
 ## Guidelines 
