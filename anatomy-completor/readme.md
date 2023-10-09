@@ -9,6 +9,9 @@
 | **Benchmark:**    | Multi-class Anatomy Completor    |
 | **Link to benchmark dataset:**    |   [Download](https://uni-duisburg-essen.sciebo.de/s/YTotoXPOwzANnXl) (multi-class) |
 | **Data structure:**| voxel occupancy grid  |
+| **Othet info:**| [Presentation(https://jianningli.me/pdfs/Anatomy%20completor.pdf) |
+
+
 
 
 #### Dataset creation: 
