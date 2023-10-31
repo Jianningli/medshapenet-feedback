@@ -1,0 +1,19 @@
+name: pcd
+channels:
+  - https://conda.anaconda.org/conda-forge/
+  - defaults
+dependencies:
+  - python=3.6
+  - pytorch::pytorch=1.7.1
+  - pytorch::torchvision=0.8.2
+  - pytorch::cudatoolkit=10.1
+  - conda-forge::cudatoolkit-dev
+  - matplotlib
+  - tqdm
+  - trimesh
+  - ninja
+  - pip
+  - pip:
+      - pynrrd
+      - open3d
+      - PyMCubes

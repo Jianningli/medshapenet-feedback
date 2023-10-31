@@ -1,0 +1,17 @@
+inherit_from: voxelization/configs/train_skullbreak.yaml
+
+train:
+  gpu: 0  # GPU to use for inference
+
+data:
+  dset: SkullBreak
+  path: datasets/SkullBreak/results/syn  # Path to results folder of point cloud diffusion model (SkullBreak)
+
+generation:
+  generation_dir: gen_skullbreak
+  num_ensemble: 5
+  save_ensemble_implants: False  # False: Just for mean implant generation; True: Enables variance map and different implant designs
+  compute_eval_metrics: True    # Set True to automatically compute the evaluation metrics for the generated implants
+
+test:
+  model_file: voxelization/out/skullbreak/model_best.pt  # Path to model

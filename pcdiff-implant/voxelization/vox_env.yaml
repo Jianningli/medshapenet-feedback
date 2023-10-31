@@ -1,0 +1,42 @@
+name: vox
+channels:
+  - anaconda
+  - conda-forge
+  - pytorch
+  - fvcore
+  - iopath
+  - bottler
+  - defaults
+dependencies:
+  - python=3.8
+  - pytorch=1.12.0
+  - torchvision=0.13.0
+  - cudatoolkit=11.3
+  - numpy=1.18.1
+  - matplotlib=3.4.3
+  - pyyaml
+  - scipy=1.4.1
+  - tqdm=4.54.0
+  - trimesh=3.8.14
+  - igl=2.2.1
+  - tensorboard=2.6.0
+  - fvcore
+  - iopath
+  - nvidiacub
+  - pip
+  - pip:
+    - plyfile==0.7
+    - open3d>=0.11.1
+    - scikit-image>=0.18.0
+    - python-mnist==0.7
+    - opencv-python>=4.4
+    - av==8.0.3
+    - pykdtree==1.3.4
+    - ipdb==0.13.7
+    - numpy==1.21
+    - matplotlib
+    - imageio
+    - plotly
+    - pynrrd
+    - PyMCubes
+    - diplib
