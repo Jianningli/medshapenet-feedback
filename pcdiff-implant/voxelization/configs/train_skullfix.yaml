@@ -1,0 +1,58 @@
+data:
+  dataset: SkullData
+  train_path: ../datasets/SkullFix/voxelization/train.csv
+  eval_path: ../datasets/SkullFix/voxelization/eval.csv
+  data_type: psr_full
+  input_type: pointcloud
+  dim: 3
+  num_gt_points: 10000
+  num_offset: 7
+  pointcloud_n: 30720
+  pointcloud_noise: 0
+model:
+  grid_res: 512 # Poisson grid resolution
+  psr_sigma: 2
+  psr_tanh: True
+  normal_normalize: False
+  predict_normal: True
+  predict_offset: True
+  c_dim: 32
+  s_offset: 0.001
+  encoder: local_pool_pointnet
+  encoder_kwargs:
+    hidden_dim: 32
+    plane_type: 'grid'
+    grid_resolution: 32
+    unet3d: True
+    unet3d_kwargs:
+      num_levels: 3
+      f_maps: 32
+      in_channels: 32
+      out_channels: 32
+  decoder: simple_local
+  decoder_kwargs:
+    sample_mode: bilinear
+    hidden_size: 32
+train:
+  gpu: 0  # GPU to use for training
+  batch_size: 2
+  lr: 5e-4
+  out_dir: out/skullfix
+  w_psr: 1
+  model_selection_metric: psr_l2
+  print_every: 10
+  checkpoint_every: 5 # in epochs
+  validate_every: 10 # in epochs
+  backup_every: 100 # in epochs
+  total_epochs: 1000
+  visualize_every: 5000
+  exp_pcl: False # Set true to save some results during training (default: False - to save memory)
+  exp_mesh: False # Set true to save some results during training (default: False - to save memory)
+  n_workers: 16
+  n_workers_val: 0
+generation:
+  generation_dir: generation_ours
+  exp_gt: False
+  exp_input: True
+  psr_resolution: 512
+  psr_sigma: 2
