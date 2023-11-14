@@ -8,9 +8,10 @@
 | -------- | ------- |
 | **Link to paper:** | [Paper](https://arxiv.org/abs/2308.16139)    |
 | **Benchmark:**    | Forensic Facial Reconstruction Benchmark    |
-| **Link to benchmark dataset:**    | [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub/download)    |
+| **Link to benchmark dataset:**    | email the authors    |
 | **Data structure:**| voxel occupancy grid  |
 
+<!-- [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub/download) -->
 
 ### Data creation: extract the skull and facial structures (skin, fat, etc) from a whole-body segmentation
 
