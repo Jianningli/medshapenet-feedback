@@ -9,7 +9,7 @@
 | **Link to paper:** | [Paper](https://arxiv.org/abs/2308.16139)    |
 | **Benchmark:**    | Forensic Facial Reconstruction Benchmark    |
 | **Link to benchmark dataset:**    | [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub/download)   |
-| **Codes and pretrained model:**    | email the author    |
+| **Codes and pretrained model:**    | [link](https://github.com/Jianningli/medshapenet-feedback/tree/main/forensic-facial-reconstruction/src)    |
 | **Data structure:**| voxel occupancy grid  |
 
 
