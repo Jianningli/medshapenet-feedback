@@ -12,4 +12,4 @@ python completor_model.py --phase test
 
 <br>
 
-change datasets and checkpoint directory wherever necessary
+change datasets and checkpoint directories wherever necessary
