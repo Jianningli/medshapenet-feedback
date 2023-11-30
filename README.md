@@ -3,11 +3,10 @@
 ### Table of Contents
 **[Overview](#Overview)**<br>
 **[Contribution Guidelines](#Guidelines)**<br>
-
-**[report issues](#report-issues)**<br>
-**[contribute shapes](#contribute-shapes)**<br>
-**[showcase your research](#showcase-your-research)**<br>
-**[suggest improvement](#suggest-improvement)**<br>
+* **[report issues](#report-issues)**<br>
+* **[contribute shapes](#contribute-shapes)**<br>
+* **[showcase your research](#showcase-your-research)**<br>
+* **[suggest improvement](#suggest-improvement)**<br>
 
 **[References](#References)**<br>
 **[Contributors](#Contributors)**<br>
