@@ -1,7 +1,7 @@
 
 ## Forensic facial reconstruction: reconstructing the facial profile from the underlying skull
 
-
+<!---
 ### Overview
 
 | **Title:**    | Automatic Forensic Facial Reconstruction  |
@@ -46,3 +46,4 @@ If you use the dataset, please cite the following paper:
   year={2023}
 }
 ```
+-->
