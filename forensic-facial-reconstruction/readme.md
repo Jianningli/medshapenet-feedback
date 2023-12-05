@@ -17,7 +17,7 @@
 
 ### Data creation: extract the skull and facial structures (skin, fat, etc) from a whole-body segmentation
 
-
+<!---
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/forensic_facial_reconstruction.png)
 
 
@@ -33,7 +33,7 @@
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/skull_reconstruction.png)
 
-
+-->
 
 ### Bibtex
 If you use the dataset, please cite the following paper:
