@@ -13,10 +13,10 @@
 | **Data structure:**| voxel occupancy grid  |
 -->
 
-<!-- [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub/download)  -->
+<!-- [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub/download)  
 
 ### Data creation: extract the skull and facial structures (skin, fat, etc) from a whole-body segmentation
-
+-->
 <!---
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/forensic_facial_reconstruction.png)
 
