@@ -11,7 +11,7 @@
 | **Link to benchmark dataset:**    | contact the author  |
 | **Codes and pretrained model:**    | [link](https://github.com/Jianningli/medshapenet-feedback/tree/main/forensic-facial-reconstruction/src)    |
 | **Data structure:**| voxel occupancy grid  |
-
+-->
 
 <!-- [Download](https://uni-duisburg-essen.sciebo.de/s/Oz8QmrAUNSPpzub/download)  -->
 
@@ -46,4 +46,4 @@ If you use the dataset, please cite the following paper:
   year={2023}
 }
 ```
--->
+
