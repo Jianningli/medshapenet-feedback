@@ -2,7 +2,7 @@
 
 
 
-# Installation ([Release page](https://pypi.org/project/MedShapeNetCore/))
+# Installation ([Release page](https://pypi.org/project/MedShapeNetCore/)) (Python >=3.8)
 
     pip install medmnist
 
