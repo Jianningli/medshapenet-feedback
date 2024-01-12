@@ -18,7 +18,7 @@ or install from source:
      python -m MedShapeNetCore check_available_keys DATASET # check the available keys of the DATASET
 
 
-For more command and detailed usage, please refer to the 
+For more commands and detailed usage, please refer to the colad [notebook](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb).
 
 
 
