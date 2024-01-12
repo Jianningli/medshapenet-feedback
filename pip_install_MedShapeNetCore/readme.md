@@ -2,6 +2,9 @@
 
 
 
+# Installation 
+
+    pip install medmnist
 
 
 ## getting started
