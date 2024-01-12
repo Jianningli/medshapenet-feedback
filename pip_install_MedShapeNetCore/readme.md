@@ -13,11 +13,16 @@ or install from source:
 
 # getting started ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb))
 
+basic commands:
+
      python -m MedShapeNetCore info  # check the general information of the dataset 
      python -m MedShapeNetCore download DATASET # download a dataset (replace DATASETA with the one you want to download e.g.,  ASOCA)
      python -m MedShapeNetCore check_available_keys DATASET # check the available keys of the DATASET
 
+how to import module functions in python:
 
+     from MedShapeNetCore.MedShapeNetCore import MyDict,MSNLoader,MSNVisualizer,MSNSaver,MSNTransformer
+     
 For more commands and detailed usage, please refer to the colad [notebook](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb).
 
 
