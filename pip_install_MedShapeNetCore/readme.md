@@ -25,7 +25,7 @@ how to import module functions in python:
 
      from MedShapeNetCore.MedShapeNetCore import MyDict,MSNLoader,MSNVisualizer,MSNSaver,MSNTransformer
      
-For more commands and detailed usage, please refer to the colad [notebook](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb).
+For more commands and detailed usage, please refer to the colab [notebook](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb).
 
 
 
