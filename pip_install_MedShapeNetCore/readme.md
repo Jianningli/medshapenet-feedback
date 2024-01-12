@@ -11,14 +11,14 @@ or install from source:
     python setup.py install
     
 
-# getting started
+# getting started ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb))
 
      python -m MedShapeNetCore info  # check the general information of the dataset 
      python -m MedShapeNetCore download DATASET # download a dataset (replace DATASETA with the one you want to download e.g.,  ASOCA)
      python -m MedShapeNetCore check_available_keys DATASET # check the available keys of the DATASET
 
 
-For more command and detailed usage, please refer to [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb)
+For more command and detailed usage, please refer to the 
 
 
 
