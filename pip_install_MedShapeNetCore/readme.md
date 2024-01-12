@@ -31,5 +31,4 @@ For more commands and detailed usage, please refer to the colad [notebook](https
 
 # Use MedShapeNetCore in Monai
 
-
-### 3D Shape Classification
+* 3D Shape Classification ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/examples/MONAI_3D_Shape_Classification.ipynb))
