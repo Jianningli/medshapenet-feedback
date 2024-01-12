@@ -1,1 +1,1 @@
-# MedShapeNetCore: [[medmnist.com](https://medmnist.github.io/), [release page](https://pypi.org/project/MedShapeNetCore/), [Zenoda](https://zenodo.org/records/10423181), [Publication](https://arxiv.org/abs/2308.16139)]
+# MedShapeNetCore: [GitHub](https://medmnist.github.io/), [release page](https://pypi.org/project/MedShapeNetCore/), [Zenoda](https://zenodo.org/records/10423181), [Publication](https://arxiv.org/abs/2308.16139)]
