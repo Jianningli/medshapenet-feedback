@@ -11,7 +11,7 @@ or install from source:
     python setup.py install
     
 
-# getting started ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb))
+# Getting started ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb))
 
 basic commands:
 
@@ -27,4 +27,7 @@ For more commands and detailed usage, please refer to the colad [notebook](https
 
 
 
-# use MedShapeNetCore in Monai
+# Use MedShapeNetCore in Monai
+
+
+### 3D Shape Classification
