@@ -29,6 +29,7 @@ For more commands and detailed usage, please refer to the colad [notebook](https
 
 
 
-# Use MedShapeNetCore in Monai
+# Use MedShapeNetCore in Machine Learning Workflows (Minimal Reproducible Example)
 
-* 3D Shape Classification ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/examples/MONAI_3D_Shape_Classification.ipynb))
+* 3D Shape Classification with MONAI [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/examples/MONAI_3D_Shape_Classification.ipynb)
+* 3D Shape Classification with Tensorflow
