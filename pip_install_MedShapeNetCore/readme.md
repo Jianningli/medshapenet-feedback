@@ -1,11 +1,15 @@
-# MedShapeNetCore: [[GitHub](https://github.com/Jianningli/medshapenet-feedback/tree/main), [release page](https://pypi.org/project/MedShapeNetCore/), [Zenodo](https://zenodo.org/records/10423181), [Publication](https://arxiv.org/abs/2308.16139)]
+# MedShapeNetCore: [[GitHub](https://github.com/Jianningli/medshapenet-feedback/tree/main), [Release page](https://pypi.org/project/MedShapeNetCore/), [Zenodo](https://zenodo.org/records/10423181), [Publication](https://arxiv.org/abs/2308.16139)]
 
 
 
-# Installation 
+# Installation ([Release page](https://pypi.org/project/MedShapeNetCore/))
 
     pip install medmnist
 
+or install from source:
+
+    python setup.py install
+    
 
 ## getting started
 
