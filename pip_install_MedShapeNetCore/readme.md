@@ -1,1 +1,1 @@
-# MedShapeNetCore: [GitHub](https://github.com/Jianningli/medshapenet-feedback/tree/main), [release page](https://pypi.org/project/MedShapeNetCore/), [Zenoda](https://zenodo.org/records/10423181), [Publication](https://arxiv.org/abs/2308.16139)]
+# MedShapeNetCore: [[GitHub](https://github.com/Jianningli/medshapenet-feedback/tree/main), [release page](https://pypi.org/project/MedShapeNetCore/), [Zenoda](https://zenodo.org/records/10423181), [Publication](https://arxiv.org/abs/2308.16139)]
