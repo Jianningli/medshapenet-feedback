@@ -6,7 +6,7 @@ This Python API
 
 # Installation (Python >=3.8, [Release page](https://pypi.org/project/MedShapeNetCore/)) 
 
-    pip install medmnist
+    pip install MedShapeNetCore
 
 or install from source:
 
