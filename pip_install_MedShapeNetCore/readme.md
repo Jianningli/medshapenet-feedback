@@ -35,13 +35,12 @@ For more commands and detailed usage, please refer to the colab [notebook](https
 * 3D Shape Classification with Tensorflow [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/examples/Tensorflow_3D_Shape_Classification.ipynb)
 
 
+    @article{li2023medshapenet,
+         title={MedShapeNet--A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
+         author={Li, Jianning and Pepe, Antonio and Gsaxner, Christina and Luijten, Gijs and Jin, Yuan and Ambigapathy, Narmada and Nasca, Enrico and Solak, Naida and Melito, Gian Marco and Memon, Afaque R and others},
+         journal={arXiv preprint arXiv:2308.16139},
+         year={2023}}
 
 
 
-@article{li2023medshapenet,
-  title={MedShapeNet--A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
-  author={Li, Jianning and Pepe, Antonio and Gsaxner, Christina and Luijten, Gijs and Jin, Yuan and Ambigapathy, Narmada and Nasca, Enrico and Solak, Naida and Melito, Gian Marco and Memon, Afaque R and others},
-  journal={arXiv preprint arXiv:2308.16139},
-  year={2023}
-}
      
