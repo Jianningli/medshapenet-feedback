@@ -9,7 +9,7 @@
 * **[contribute shapes](#contribute-shapes)**<br>
 * **[showcase your research](#showcase-your-research)**<br>
 * **[suggest improvement](#suggest-improvement)**<br>
-
+**[Installation](#Installation)**<br>
 **[References](#References)**<br>
 **[Contributors](#Contributors)**<br>
 **[List of Related Publications](#List-of-Related-Publications)**<br>
@@ -51,6 +51,13 @@ Formatting is flexible. You can find existing examples  [here](https://github.co
 
 ### suggest improvement
 
+## Installation
+
+```
+pip install MedShapeNetCore
+
+```
+For detailed usage, refer to [this Google CoLab](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb).
 
 ## References 
 
