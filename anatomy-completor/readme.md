@@ -1,5 +1,5 @@
 
-### Multi-class Anatomy Completor: Generating whole-body pseudo labels given partial/sparse manual annotations (Semantic Scene Completion)
+### Multi-class Anatomy Completor: Generating whole-body pseudo labels given partial/sparse manual annotations (Semantic Scene Completion on Voxel Grids)
 
 #### Overview
 
