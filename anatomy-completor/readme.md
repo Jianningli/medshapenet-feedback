@@ -36,14 +36,14 @@ Use the network to learn:<br>
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/single_class_results.png)
 
 
-* Multi-class reconstruction:
+* Multi-class reconstruction: it also belongs to a semantic scene completion (SSC) problem on other point clouds or voxel grids (related papers [1](https://ojs.aaai.org/index.php/AAAI/article/view/16451),[2](https://openaccess.thecvf.com/content/CVPR2023/papers/Xia_SCPNet_Semantic_Scene_Completion_on_Point_Cloud_CVPR_2023_paper.pdf),[3](https://arxiv.org/abs/2210.05891),[4](https://arxiv.org/pdf/1611.08974.pdf))
 
 ![datacreation](https://github.com/Jianningli/medshapenet-feedback/blob/main/assets/completor_results.png)
 
 
 
 #### Bibtex
-If you use the codes and/or dataset, please cite the following papers:
+If you find our papers useful to your research and/or use the codes and/or dataset, please cite the following papers:
 
 ```
 @article{li2023anatomy,
