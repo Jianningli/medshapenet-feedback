@@ -1,4 +1,4 @@
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 
 import numpy as np
 import trimesh
@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import tempfile
 import os
 from collections import OrderedDict
+from pymeshfix._meshfix import PyTMesh
 
 class MyDict(OrderedDict):
     def __missing__(self, key):
@@ -72,16 +73,31 @@ class MSNSaver():
 		'''return a trimesh point cloud  object'''
 		return cloud
 
-	def save_stl(self,verts,faces,filename):
+	def save_stl(self,verts,faces,filename, watertight=True):
 		mesh = trimesh.Trimesh(vertices=verts, faces=faces)
 		mesh.fill_holes()
+		'''the fill_holes() function does not always make the mesh water tight'''
 		mesh.export(self.default_save_path+filename)
 		'''return a trimesh mesh object'''
+		if watertight==True:
+			mfix_t = PyTMesh(False)
+			vert=np.asarray(verts)
+			facets=np.asarray(faces)
+			mfix_t.load_array(vert, facets)
+			mfix_t.save_file(self.default_save_path+'temp.stl')
+			mfix = PyTMesh(False)
+			mfix.load_file(self.default_save_path+'temp.stl')
+			mfix.fill_small_boundaries(nbe=0, refine=True)
+			v_new, f_new = mfix.return_arrays()
+			mfix.save_file(self.default_save_path+filename)
+			mesh = trimesh.Trimesh(vertices=v_new, faces=f_new)
+		print('water tight mesh:',mesh.is_watertight)
 		return mesh
 
 	def save_nifti(self,nd_array,filename):
 		siktImg=sitk.GetImageFromArray(nd_array)
 		sitk.WriteImage(siktImg,self.default_save_path+filename)
+
 
 
 class MSNTransformer(object):
@@ -124,6 +140,12 @@ class MSNTransformer(object):
 		print('final num faces',len(faces_new))		
 
 		return mesh_smp,verts_new,faces_new
+
+
+
+
+
+
 
 
 

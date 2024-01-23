@@ -7,6 +7,7 @@ import sys
 from glob import glob
 import shutil
 
+
 class DevNull:
     def write(self, msg):
         pass
@@ -36,7 +37,7 @@ data_set_info={
                         'information': 'abdominal organs',
                         'avi_keys':[
                                     'organ->mask',
-                                    'orgna->point',
+                                    'organ->point',
                                     'organ->mesh->vertices->sample index',
                                     'organ->mesh->faces->sample index'
                                     ]
@@ -67,7 +68,7 @@ data_set_info={
                                     'organ->mesh->vertices->sample index',
                                     'organ->mesh->faces->sample index'
                                     ]
-                        }
+                        },
                 },
 
     'commands': [
@@ -81,13 +82,13 @@ data_set_info={
 
 
 def info():
-    print('______copyright')
+    print('___GeneralInfo___')
 
     print(f'MedShapeNetCore v{MedShapeNetCore.__version__}')
     print(f'Homepage:', data_set_info['homepage'])
     print('Contact:', data_set_info['contact'])
 
-    print('______available datasets')
+    print('___available datasets___')
 
     ASOCA=data_set_info['dataset']['ASOCA']
     FLARE=data_set_info['dataset']['FLARE']
@@ -104,75 +105,72 @@ def info():
            f'PULMONARY: {PULMONARY}    '
             )
 
-    print('______basic commands')
+    print('___basic commands___')
 
     print(data_set_info['commands'])
 
 
 
 def download():
-
     if not os.path.exists('./medshapenetcore_npz/'):
         os.mkdir('./medshapenetcore_npz/')
-
     available_datasets=list(data_set_info['dataset'].keys())
-
-    if not (sys.argv[2] in available_datasets):
-        print(
-            f"dataset {sys.argv[2]} not available," +
-            f"please choose from {available_datasets}"
-            )
-
-        raise Exception()
-
-    elif sys.argv[2] == 'ASOCA':
-        url=data_set_info['dataset']['ASOCA']['url']
-        path = 'medshapenetcore_ASOCA.npz'
-
-    elif sys.argv[2] == 'FLARE':
-        url=data_set_info['dataset']['FLARE']['url']
-        path = 'medshapenetcore_FLARE.npz'
-
-    elif sys.argv[2]== 'KITS':
-        url=data_set_info['dataset']['KITS']['url']
-        path = 'medshapenetcore_KITS.npz'
-
-    elif sys.argv[2]== 'PULMONARY':
-        url=data_set_info['dataset']['PULMONARY']['url']
-        path = 'medshapenetcore_PULMONARY.npz'
-
-    '''
-    elif sys.argv[2] == 'ALL':
-        url='https://zenodo.org/records/10423181/files/medshapenetcore.npz?download=1'
-        path = './medshapenetcore_npz/medshapenetcore.npz'
-    '''
-
-    print('downloading...')
-
-    save_dir='./medshapenetcore_npz/'+path
-
-    r = requests.get(url, stream=True)
-    with open(save_dir, 'wb') as f:
-        total_length = int(r.headers.get('content-length'))
-        for chunk in progress.bar(r.iter_content(chunk_size=1024), expected_size=(total_length/1024) + 1): 
-            if chunk:
-                f.write(chunk)
-                f.flush()
-
-    if os.path.exists(save_dir):
-        print('download complete...')
-        print('file directory:',save_dir)
+    if sys.argv[2] == 'all':
+        print('downloading all available datasets:',available_datasets)
+        print('Warning:this may take a long time depending on your internet connection!')
+        os.system("zenodo_get %s"%'10.5281/zenodo.10406279 -o medshapenetcore_npz')
     else:
-        raise RuntimeError(
-                           'Download went wrong! ' + 
-                           'Please download the dataset manually at: ' +
-                           'https://zenodo.org/records/10423181' +
-                           'and copy it to folder medshapenetcore_npz'
-                           )
+        if not (sys.argv[2] in available_datasets):
+            print(
+                f"dataset {sys.argv[2]} not available," +
+                f"please choose from {available_datasets}"
+                )
+
+            raise Exception()
+        else:
+            if sys.argv[2] == 'ASOCA':
+                url=data_set_info['dataset']['ASOCA']['url']
+                path = 'medshapenetcore_ASOCA.npz'
+
+            if sys.argv[2] == 'FLARE':
+                url=data_set_info['dataset']['FLARE']['url']
+                path = 'medshapenetcore_FLARE.npz'
+
+            if sys.argv[2]== 'KITS':
+                url=data_set_info['dataset']['KITS']['url']
+                path = 'medshapenetcore_KITS.npz'
+
+            if sys.argv[2]== 'PULMONARY':
+                url=data_set_info['dataset']['PULMONARY']['url']
+                path = 'medshapenetcore_PULMONARY.npz'
+            print('downloading...')
+            save_dir='./medshapenetcore_npz/'+path
+            r = requests.get(url, stream=True)
+            with open(save_dir, 'wb') as f:
+                total_length = int(r.headers.get('content-length'))
+                for chunk in progress.bar(r.iter_content(chunk_size=1024), expected_size=(total_length/1024) + 1): 
+                    if chunk:
+                        f.write(chunk)
+                        f.flush()
+            if os.path.exists(save_dir):
+                print('download complete...')
+                print('file directory:',save_dir)
+            else:
+                print(
+                       'Download went wrong! ' + 
+                       'Please download the dataset manually at: ' +
+                       'https://zenodo.org/records/10423181' +
+                       'and copy it to folder medshapenetcore_npz'+
+                       'inside the current working directory'
+                       )
+
+                raise RuntimeError()
 
 
 
-def clean():
+
+
+def clean(rm_dataset=True):
     print('deleting all files generated by MedShapeNet...')
     if os.path.exists('./medshapenetcore_npz/'):
         shutil.rmtree('./medshapenetcore_npz/')
@@ -180,6 +178,9 @@ def clean():
     if os.path.exists('./medshapenetcore_saved/'):
         shutil.rmtree('./medshapenetcore_saved/')
 
+    if rm_dataset:
+        if os.path.exists('./medshapenetcore_npz/'):
+            shutil.rmtree('./medshapenetcore_npz/')
 
 
 
