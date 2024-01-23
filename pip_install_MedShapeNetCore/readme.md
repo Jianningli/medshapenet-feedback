@@ -19,7 +19,11 @@ basic commands:
 
      python -m MedShapeNetCore info  # check the general information of the dataset 
      python -m MedShapeNetCore download DATASET # download a dataset (replace DATASETA with the one you want to download e.g.,  ASOCA)
+     python -m MedShapeNetCore download all # download all datasets at once
      python -m MedShapeNetCore check_available_keys DATASET # check the available keys of the DATASET
+
+     
+python -m MedShapeNetCore download all
 
 how to import module functions in python:
 
