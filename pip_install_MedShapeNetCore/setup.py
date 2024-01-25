@@ -1,7 +1,20 @@
+# To build and upload to PyPI:
+#
+#     python3 setup.py sdist bdist_wheel
+#     python3 -m twine upload dist/*
+#
 import MedShapeNetCore
 from setuptools import setup, find_packages
 
+def readme():
+    with open('README.md', encoding='utf-8') as f:
+        content = f.read()
+    return content
 
+
+README = readme()
+
+ 
 setup(
     name='MedShapeNetCore',
     version=MedShapeNetCore.__version__,
@@ -11,6 +24,7 @@ setup(
     author_email='jianningli.me@gmail.com',
     python_requires=">=3.8.0",
     description='MedShapeNetCore: A Lightweight 3D Repository for Computer Vision and Machine Learning',
+    long_description=readme(),
     long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=[
@@ -21,12 +35,14 @@ setup(
         "tqdm",
         "Pillow",
         "fire",
+        "zenodo_get",
         "trimesh",
         "SimpleITK",
         "open3d",
         "scipy",
         "matplotlib",
         "clint",
+        "pymeshfix",
         "requests",
         "argparse"
     ],
@@ -37,3 +53,5 @@ setup(
         "Programming Language :: Python :: 3 :: Only"
     ]
 )
+
+
