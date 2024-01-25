@@ -1,4 +1,4 @@
-__version__ = "0.1.2"
+__version__ = "0.1.4"
 
 import numpy as np
 import trimesh
@@ -140,6 +140,20 @@ class MSNTransformer(object):
 		print('final num faces',len(faces_new))		
 
 		return mesh_smp,verts_new,faces_new
+
+
+	def mesh2voxel(self,org_vert,org_face, voxel_size=0.5, save_nifti=True):
+		mesh = trimesh.Trimesh(vertices=org_vert, faces=org_face)
+		mesh.export(self.default_save_path+'vox_temp.stl')
+		m = trimesh.load(self.default_save_path+'vox_temp.stl')
+		v = m.voxelized(pitch=voxel_size)
+		voxel_grid=v.matrix+1-1
+		print('size of the voxel grid',voxel_grid.shape)
+		if save_nifti:
+			mask_img = sitk.GetImageFromArray(voxel_grid)
+			sitk.WriteImage(mask_img,self.default_save_path+'voxelized_temp.nii.gz')		
+		return voxel_grid
+
 
 
 
