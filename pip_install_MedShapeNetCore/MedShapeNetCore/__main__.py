@@ -17,7 +17,7 @@ data_set_info={
     'contact':'Jianning Li, jianningli.me@gmail.com',
     'version': f'MedShapeNetCore v{MedShapeNetCore.__version__}',
     'dataset': {               
-               'ASOCA':{'url':'https://zenodo.org/records/10568941/files/medshapenetcore_ASOCA.npz?download=1',
+               'ASOCA':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_ASOCA.npz?download=1',
                         'size':'41.8Mb',
                         'link':'https://asoca.grand-challenge.org/',
                         'information': 'coronary arteries',
@@ -31,7 +31,7 @@ data_set_info={
                         },
 
 
-               'FLARE':{'url':'https://zenodo.org/records/10568941/files/medshapenetcore_FLARE.npz?download=1',
+               'FLARE':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_FLARE.npz?download=1',
                         'size':'555Mb',
                         'link':'https://flare.grand-challenge.org/',
                         'information': 'abdominal organs',
@@ -44,7 +44,7 @@ data_set_info={
                         },
 
 
-               'KITS':{'url':'https://zenodo.org/records/10568941/files/medshapenetcore_KITS.npz?download=1',
+               'KITS':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_KITS.npz?download=1',
                         'size':'401Mb',
                         'link':'https://kits-challenge.org/kits23/',
                         'information': 'kidney and kidney tumor',
@@ -58,7 +58,7 @@ data_set_info={
                         },
 
 
-               'PULMONARY':{'url':'https://zenodo.org/records/10568941/files/medshapenetcore_PULMONARY.npz?download=1',
+               'PULMONARY':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_PULMONARY.npz?download=1',
                         'size':'1.14Gb',
                         'link':'https://arxiv.org/pdf/2309.17329.pdf',
                         'information': 'pulmonary arteries, including the airway,artery, vein',
@@ -71,7 +71,7 @@ data_set_info={
                         },
 
 
-               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10568941/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
+               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
                         'size':'515.57Mb',
                         'link':'https://pubmed.ncbi.nlm.nih.gov/35083618/',
                         'information': 'thoracic aorta with arch branches',
@@ -84,7 +84,7 @@ data_set_info={
                         },
 
 
-               'CoronaryArteries':{'url':'https://zenodo.org/records/10568941/files/medshapenetcore_CoronaryArteries.npz?download=1',
+               'CoronaryArteries':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_CoronaryArteries.npz?download=1',
                         'size':'677.02Mb',
                         'link':'https://pubs.aip.org/aip/apb/article/8/1/016103/3061557/A-fully-automated-deep-learning-approach-for',
                         'information': 'coronary arteries',
@@ -93,6 +93,16 @@ data_set_info={
                                     'point',
                                     'mesh->vertices->sample index',
                                     'mesh->faces->sample index'
+                                    ]
+                        },
+
+               '3DTeethSeg':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_3DTeethSeg.npz?download=1',
+                        'size':'3.7Gb',
+                        'link':'https://github.com/abenhamadou/3DTeethSeg22_challenge',
+                        'information': '3D teeth labeling and semantic segmentation',
+                        'avi_keys':[
+                                    'patient ID->mesh->vertices',
+                                    'patient ID->mesh->faces'
                                     ]
                         }
 
@@ -123,6 +133,7 @@ def info():
     PULMONARY=data_set_info['dataset']['PULMONARY']
     ThoracicAorta_Saitta=data_set_info['dataset']['ThoracicAorta_Saitta']
     CoronaryArteries=data_set_info['dataset']['CoronaryArteries']
+    TDTeethSeg=data_set_info['dataset']['3DTeethSeg']
 
     print(
            f'ASOCA:                {ASOCA}                 \n'
@@ -135,9 +146,10 @@ def info():
            '___\n'
            f'ThoracicAorta_Saitta: {ThoracicAorta_Saitta}  \n'
            '___\n'
-           f'CoronaryArteries:     {CoronaryArteries}        '
+           f'CoronaryArteries:     {CoronaryArteries}      \n'
+           '___\n'
+           f'3DTeethSeg:           {TDTeethSeg}              ')
 
-            )
 
     print('___basic commands___')
 
@@ -187,6 +199,10 @@ def download():
             if sys.argv[2]== 'CoronaryArteries':
                 url=data_set_info['dataset']['CoronaryArteries']['url']
                 path = 'medshapenetcore_CoronaryArteries.npz'
+
+            if sys.argv[2]== '3DTeethSeg':
+                url=data_set_info['dataset']['3DTeethSeg']['url']
+                path = 'medshapenetcore_3DTeethSeg.npz'
 
 
             print('downloading...')
@@ -302,6 +318,9 @@ def check_available_keys():
 
     if sys.argv[2] == 'CoronaryArteries':
         print(data_set_info['dataset']['CoronaryArteries']['avi_keys'])
+
+    if sys.argv[2] == '3DTeethSeg':
+        print(data_set_info['dataset']['3DTeethSeg']['avi_keys'])
 
 
 

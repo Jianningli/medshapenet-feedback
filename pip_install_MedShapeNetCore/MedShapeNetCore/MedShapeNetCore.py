@@ -1,4 +1,4 @@
-__version__ = "0.1.4"
+__version__ = "0.1.6"
 
 import numpy as np
 import trimesh
@@ -11,6 +11,7 @@ import tempfile
 import os
 from collections import OrderedDict
 from pymeshfix._meshfix import PyTMesh
+
 
 class MyDict(OrderedDict):
     def __missing__(self, key):
@@ -28,13 +29,34 @@ class MSNLoader(object):
 		if not os.path.isfile(path):
 			raise Exception(f"file {path} not available, please download it first")
 
-		data=np.load(path,allow_pickle=True)['data'].item()
+		data=np.load(path,allow_pickle=True,mmap_mode='c')['data'].item()
 
 		print('current dataset:',path)
 		print('available keys in the dataset:', list(data.keys()))
 		return data
 
 
+	'''
+	def load_as_pytroch_dataloader(self,filename,batchsize=1):
+
+		print('loading the mask and point data as PyTorch Dataloader')
+
+		import torch
+		from torch.utils.data import TensorDataset, DataLoader
+
+		data=self.load(filename)
+		volumes=np.expand_dims(data['mask'],axis=1)
+		points=np.expand_dims(data['point'],axis=1)
+		
+		tensor_volumes = torch.Tensor(volumes) 
+		torch_dataset_volumes = TensorDataset(tensor_volumes) 
+		dataloader_volumes = DataLoader(torch_dataset_volumes,batch_size=batchsize) 
+
+		tensor_points = torch.Tensor(points) 
+		torch_dataset_points = TensorDataset(tensor_points) 
+		dataloader_points = DataLoader(torch_dataset_points,batch_size=batchsize) 
+		return dataloader_volumes,dataloader_points
+	'''
 
 class MSNVisualizer(object):
 	def __init__(self, figsize=(8,8)):
