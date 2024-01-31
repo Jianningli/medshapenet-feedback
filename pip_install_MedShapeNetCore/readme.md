@@ -4,7 +4,7 @@ MedShapeNetCore is a subset of [MedShapeNet](https://arxiv.org/abs/2308.16139), 
 This API provides means to downloading, accessing and processing the shape data via Python, which integrates MedShapeNetCore seamless into Python-based machine learning workflows.
 
 
-# Installation (Python >=3.8, [Release page](https://pypi.org/project/MedShapeNetCore/)) 
+## Installation (Python >=3.8, [Release page](https://pypi.org/project/MedShapeNetCore/)) 
 
     pip install MedShapeNetCore
 
@@ -13,7 +13,7 @@ or install from source:
     python setup.py install
     
 
-# Getting started ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb))
+## Getting started ([![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/getting_started.ipynb))
 
 basic commands:
 
@@ -33,12 +33,12 @@ For more commands and detailed usage, please refer to the colab [notebook](https
 
 
 
-# Use MedShapeNetCore in Machine Learning Workflows (Minimal Reproducible Example)
+## Use MedShapeNetCore in Machine Learning Workflows (Minimal Reproducible Example)
 
 * 3D Shape Classification with MONAI [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/examples/MONAI_3D_Shape_Classification.ipynb)
 * 3D Shape Classification with Tensorflow [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/examples/Tensorflow_3D_Shape_Classification.ipynb)
 
-# Reference
+## Reference
 ```
     @article{li2023medshapenet,
          title={MedShapeNet--A Large-Scale Dataset of 3D Medical Shapes for Computer Vision},
