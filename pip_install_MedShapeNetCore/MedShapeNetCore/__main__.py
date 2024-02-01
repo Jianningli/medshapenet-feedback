@@ -17,10 +17,11 @@ data_set_info={
     'contact':'Jianning Li, jianningli.me@gmail.com',
     'version': f'MedShapeNetCore v{MedShapeNetCore.__version__}',
     'dataset': {               
-               'ASOCA':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_ASOCA.npz?download=1',
+               'ASOCA':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_ASOCA.npz?download=1',
                         'size':'41.8Mb',
                         'link':'https://asoca.grand-challenge.org/',
                         'information': 'coronary arteries',
+                        'organs_key_words':'coronary arteries,artery',
                         'avi_keys':[
                                     'mask',
                                     'point',
@@ -31,10 +32,11 @@ data_set_info={
                         },
 
 
-               'FLARE':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_FLARE.npz?download=1',
+               'FLARE':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_FLARE.npz?download=1',
                         'size':'555Mb',
                         'link':'https://flare.grand-challenge.org/',
                         'information': 'abdominal organs',
+                        'organs_key_words':  'liver,kidney,spleen,pancreas,aorta,inferior vena cava,adrenal gland,gallbladder,esophagus,stomach,duodenum',
                         'avi_keys':[
                                     'organ->mask',
                                     'organ->point',
@@ -44,10 +46,11 @@ data_set_info={
                         },
 
 
-               'KITS':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_KITS.npz?download=1',
+               'KITS':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_KITS.npz?download=1',
                         'size':'401Mb',
                         'link':'https://kits-challenge.org/kits23/',
                         'information': 'kidney and kidney tumor',
+                        'organs_key_words':'kidney,tumor',
                         'avi_keys':[
                                     'mask',
                                     'point',
@@ -58,10 +61,11 @@ data_set_info={
                         },
 
 
-               'PULMONARY':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_PULMONARY.npz?download=1',
+               'PULMONARY':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_PULMONARY.npz?download=1',
                         'size':'1.14Gb',
                         'link':'https://arxiv.org/pdf/2309.17329.pdf',
                         'information': 'pulmonary arteries, including the airway,artery, vein',
+                        'organs_key_words':'pulmonary arteries, airway,artery,vein',
                         'avi_keys':[
                                     'organ->mask',
                                     'orgna->point',
@@ -71,10 +75,11 @@ data_set_info={
                         },
 
 
-               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
+               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
                         'size':'515.57Mb',
                         'link':'https://pubmed.ncbi.nlm.nih.gov/35083618/',
                         'information': 'thoracic aorta with arch branches',
+                        'organs_key_words':'thoracic aorta',
                         'avi_keys':[
                                     'mask',
                                     'point',
@@ -84,10 +89,11 @@ data_set_info={
                         },
 
 
-               'CoronaryArteries':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_CoronaryArteries.npz?download=1',
+               'CoronaryArteries':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_CoronaryArteries.npz?download=1',
                         'size':'677.02Mb',
                         'link':'https://pubs.aip.org/aip/apb/article/8/1/016103/3061557/A-fully-automated-deep-learning-approach-for',
                         'information': 'coronary arteries',
+                        'organs_key_words':'coronary arteries, artery',
                         'avi_keys':[
                                     'mask',
                                     'point',
@@ -96,13 +102,26 @@ data_set_info={
                                     ]
                         },
 
-               '3DTeethSeg':{'url':'https://zenodo.org/records/10592749/files/medshapenetcore_3DTeethSeg.npz?download=1',
+               '3DTeethSeg':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_3DTeethSeg.npz?download=1',
                         'size':'3.7Gb',
                         'link':'https://github.com/abenhamadou/3DTeethSeg22_challenge',
                         'information': '3D teeth labeling and semantic segmentation',
+                        'organs_key_words':'teeth',
                         'avi_keys':[
                                     'patient ID->mesh->vertices',
                                     'patient ID->mesh->faces'
+                                    ]
+                        },
+
+               'FaceVR':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_FaceVR.npz?download=1',
+                        'size':'14.9Mb',
+                        'link':'https://figshare.com/articles/dataset/Medical_Augmented_Reality_Facial_Data_Collection/8857007/2',
+                        'information': '3D facial models for VR',
+                        'organs_key_words':'face, facial',
+                        'avi_keys':[
+                                    'point',
+                                    'mesh->vertices',
+                                    'mesh->faces'
                                     ]
                         }
 
@@ -111,11 +130,38 @@ data_set_info={
     'commands': [
                  'python -m MedShapeNetCore download DARASET',
                  'python -m MedShapeNetCore clean',
-                 'python -m MedShapeNetCore check_available_keys DARASET'
+                 'python -m MedShapeNetCore check_available_keys DARASET',
+                 'python -m MedShapeNetCore search_by_organ ORGAN'                
     ]
 
 }
     
+
+def search_by_organ():
+    organ=sys.argv[2] 
+    datasets=list(data_set_info['dataset'].keys())
+    get_datasets=[]
+    for data_set in datasets:
+        if organ in data_set_info['dataset'][data_set]['organs_key_words']:
+            get_datasets.append(data_set)
+
+    if len(get_datasets)!=0:
+        print(
+            f'the following dataset(s): {get_datasets} contain(s) {organ}  \n'
+            f'download {get_datasets} using the following command:         \n'
+            f'python -m MedShapeNetCore download {get_datasets}'
+            )
+
+    else:
+        print(
+            f'{organ} not found in the MedShapeNetCore  \n'
+            'current availale anatomy keywords are:             \n'
+            '_____________'
+            )
+
+        for data_set in datasets:
+            print(data_set_info['dataset'][data_set]['organs_key_words'])
+
 
 
 def info():
@@ -134,6 +180,7 @@ def info():
     ThoracicAorta_Saitta=data_set_info['dataset']['ThoracicAorta_Saitta']
     CoronaryArteries=data_set_info['dataset']['CoronaryArteries']
     TDTeethSeg=data_set_info['dataset']['3DTeethSeg']
+    FaceVR=data_set_info['dataset']['FaceVR']
 
     print(
            f'ASOCA:                {ASOCA}                 \n'
@@ -147,6 +194,8 @@ def info():
            f'ThoracicAorta_Saitta: {ThoracicAorta_Saitta}  \n'
            '___\n'
            f'CoronaryArteries:     {CoronaryArteries}      \n'
+           '___\n'
+           f'FaceVR:               {FaceVR}                \n'
            '___\n'
            f'3DTeethSeg:           {TDTeethSeg}              ')
 
@@ -203,6 +252,10 @@ def download():
             if sys.argv[2]== '3DTeethSeg':
                 url=data_set_info['dataset']['3DTeethSeg']['url']
                 path = 'medshapenetcore_3DTeethSeg.npz'
+
+            if sys.argv[2]== 'FaceVR':
+                url=data_set_info['dataset']['FaceVR']['url']
+                path = 'medshapenetcore_FaceVR.npz'
 
 
             print('downloading...')
@@ -322,7 +375,9 @@ def check_available_keys():
     if sys.argv[2] == '3DTeethSeg':
         print(data_set_info['dataset']['3DTeethSeg']['avi_keys'])
 
-
+    if sys.argv[2] == 'FaceVR':
+        print(data_set_info['dataset']['FaceVR']['avi_keys'])
+        
 
 if __name__ == "__main__":
     import fire

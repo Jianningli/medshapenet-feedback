@@ -1,4 +1,4 @@
-__version__ = "0.1.6"
+__version__ = "0.1.7"
 
 import numpy as np
 import trimesh
@@ -157,12 +157,17 @@ class MSNTransformer(object):
 		verts_new=np.asarray(mesh_smp.vertices)
 		faces_new=np.asarray(mesh_smp.triangles)
 		o3d.io.write_triangle_mesh(self.default_save_path+'decimated_mesh.stl',mesh_smp)
-
 		print('final num vertices',len(verts_new))
 		print('final num faces',len(faces_new))		
-
 		return mesh_smp,verts_new,faces_new
 
+	def point_sampling_from_mesh(self,org_vert, org_face,target_num_points=20000):
+		print('uniformly sampling points from a mesh surface... ')
+		print('original num vertices',len(org_vert))
+		print('original num faces',len(org_face))
+		mesh = trimesh.Trimesh(vertices=org_vert, faces=org_face)		
+		sampled_points, _= trimesh.sample.sample_surface_even(mesh,target_num_points)
+		return sampled_points
 
 	def mesh2voxel(self,org_vert,org_face, voxel_size=0.5, save_nifti=True):
 		mesh = trimesh.Trimesh(vertices=org_vert, faces=org_face)
