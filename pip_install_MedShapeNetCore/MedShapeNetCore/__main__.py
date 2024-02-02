@@ -6,7 +6,10 @@ from clint.textui import progress
 import sys
 from glob import glob
 import shutil
-
+from urllib.request import urlopen
+import re
+from tqdm import tqdm
+from pathlib import Path
 
 class DevNull:
     def write(self, msg):
@@ -17,7 +20,7 @@ data_set_info={
     'contact':'Jianning Li, jianningli.me@gmail.com',
     'version': f'MedShapeNetCore v{MedShapeNetCore.__version__}',
     'dataset': {               
-               'ASOCA':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_ASOCA.npz?download=1',
+               'ASOCA':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_ASOCA.npz?download=1',
                         'size':'41.8Mb',
                         'link':'https://asoca.grand-challenge.org/',
                         'information': 'coronary arteries',
@@ -32,7 +35,7 @@ data_set_info={
                         },
 
 
-               'FLARE':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_FLARE.npz?download=1',
+               'FLARE':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_FLARE.npz?download=1',
                         'size':'555Mb',
                         'link':'https://flare.grand-challenge.org/',
                         'information': 'abdominal organs',
@@ -46,7 +49,7 @@ data_set_info={
                         },
 
 
-               'KITS':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_KITS.npz?download=1',
+               'KITS':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_KITS.npz?download=1',
                         'size':'401Mb',
                         'link':'https://kits-challenge.org/kits23/',
                         'information': 'kidney and kidney tumor',
@@ -61,7 +64,7 @@ data_set_info={
                         },
 
 
-               'PULMONARY':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_PULMONARY.npz?download=1',
+               'PULMONARY':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_PULMONARY.npz?download=1',
                         'size':'1.14Gb',
                         'link':'https://arxiv.org/pdf/2309.17329.pdf',
                         'information': 'pulmonary arteries, including the airway,artery, vein',
@@ -75,21 +78,21 @@ data_set_info={
                         },
 
 
-               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
+               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
                         'size':'515.57Mb',
                         'link':'https://pubmed.ncbi.nlm.nih.gov/35083618/',
                         'information': 'thoracic aorta with arch branches',
                         'organs_key_words':'thoracic aorta',
                         'avi_keys':[
-                                    'mask',
-                                    'point',
+                                    'mask->sample index',
+                                    'point->sample index',
                                     'mesh->vertices->sample index',
                                     'mesh->faces->sample index'
                                     ]
                         },
 
 
-               'CoronaryArteries':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_CoronaryArteries.npz?download=1',
+               'CoronaryArteries':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_CoronaryArteries.npz?download=1',
                         'size':'677.02Mb',
                         'link':'https://pubs.aip.org/aip/apb/article/8/1/016103/3061557/A-fully-automated-deep-learning-approach-for',
                         'information': 'coronary arteries',
@@ -102,18 +105,18 @@ data_set_info={
                                     ]
                         },
 
-               '3DTeethSeg':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_3DTeethSeg.npz?download=1',
+               '3DTeethSeg':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_3DTeethSeg.npz?download=1',
                         'size':'3.7Gb',
                         'link':'https://github.com/abenhamadou/3DTeethSeg22_challenge',
                         'information': '3D teeth labeling and semantic segmentation',
-                        'organs_key_words':'teeth',
+                        'organs_key_words':'teeth,tooth',
                         'avi_keys':[
                                     'patient ID->mesh->vertices',
                                     'patient ID->mesh->faces'
                                     ]
                         },
 
-               'FaceVR':{'url':'https://zenodo.org/records/10606436/files/medshapenetcore_FaceVR.npz?download=1',
+               'FaceVR':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_FaceVR.npz?download=1',
                         'size':'14.9Mb',
                         'link':'https://figshare.com/articles/dataset/Medical_Augmented_Reality_Facial_Data_Collection/8857007/2',
                         'information': '3D facial models for VR',
@@ -123,7 +126,31 @@ data_set_info={
                                     'mesh->vertices',
                                     'mesh->faces'
                                     ]
+                        },
+
+               'ToothFairy':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_ToothFairy.npz?download=1',
+                        'size':'145.94Mb',
+                        'link':'https://toothfairychallenges.github.io/',
+                        'information': 'inferior alveolar nerve segmentations',
+                        'organs_key_words':'maxillofacial,teeth, tooth,inferior alveolar nerve',
+                        'avi_keys':[
+                                    'mask->sample index',
+                                    'point->sample index',
+                                    'mesh->vertices->sample index',
+                                    'mesh->faces->sample index'
+                                    ]
+                        },
+
+               'AutoImplantCraniotomy':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_AutoImplantCraniotomy.npz?download=1',
+                        'size':'6.41Mb',
+                        'link':'https://autoimplant2021.grand-challenge.org/',
+                        'information': 'skull reconstruction and cranial implant design',
+                        'organs_key_words':'skull,craniotomy',
+                        'avi_keys':[
+                                    'mask'
+                                    ]
                         }
+
 
                 },
 
@@ -131,12 +158,14 @@ data_set_info={
                  'python -m MedShapeNetCore download DARASET',
                  'python -m MedShapeNetCore clean',
                  'python -m MedShapeNetCore check_available_keys DARASET',
-                 'python -m MedShapeNetCore search_by_organ ORGAN'                
+                 'python -m MedShapeNetCore search_by_organ ORGAN',
+                 'python -m test search_and_download ORGAN'                
     ]
 
 }
-    
 
+
+    
 def search_by_organ():
     organ=sys.argv[2] 
     datasets=list(data_set_info['dataset'].keys())
@@ -164,6 +193,46 @@ def search_by_organ():
 
 
 
+
+def search_and_download():
+    if not os.path.exists('./temp/'):
+        os.mkdir('./temp/')
+    r = requests.get("https://medshapenet.ikim.nrw/uploads/MedShapeNetDataset.txt", stream=True)
+    with open('./temp/MedShapeNetDataset.txt', 'wb') as f:
+        f.write(r.content)
+    print(f'searching {sys.argv[2]}...')
+    matched_urls=[]
+    with open('./temp/MedShapeNetDataset.txt', 'r') as inF:
+        for line in inF:
+            if sys.argv[2] in line:
+                matched_urls.append(line)
+    if len(matched_urls)==0:
+        print(f'found {len(matched_urls)} entries of {sys.argv[2]}')
+        if os.path.exists('./temp/'):
+            shutil.rmtree('./temp/')
+    else:
+        save_folder='./stls/'+sys.argv[2]+'/'
+        if not os.path.exists(save_folder):
+            Path(save_folder).mkdir(parents=True, exist_ok=True)
+        print(f'found {len(matched_urls)} entries of {sys.argv[2]}, started downloading... files are saved in folder {save_folder}')
+        counter=0
+        for url in matched_urls:
+            print(url)
+            r = requests.get(url.strip(), stream=True)
+            filename=save_folder+sys.argv[2]+'_'+'{0:05}'.format(counter)+'.stl'
+            counter+=1
+            with open(filename, 'wb') as f:
+                f.write(r.content)
+        print('Download complete! Files are stored in folder stls')
+        if os.path.exists('./temp/'):
+            shutil.rmtree('./temp/')
+
+
+
+
+
+
+
 def info():
     print('___GeneralInfo___')
 
@@ -181,23 +250,34 @@ def info():
     CoronaryArteries=data_set_info['dataset']['CoronaryArteries']
     TDTeethSeg=data_set_info['dataset']['3DTeethSeg']
     FaceVR=data_set_info['dataset']['FaceVR']
+    ToothFairy=data_set_info['dataset']['ToothFairy']
+    AutoImplantCraniotomy=data_set_info['dataset']['AutoImplantCraniotomy']
 
     print(
-           f'ASOCA:                {ASOCA}                 \n'
+           f'ASOCA:                 {ASOCA}                     \n'
            '___\n'
-           f'FLARE:                {FLARE}                 \n'
+           f'FLARE:                 {FLARE}                     \n'
            '___\n'
-           f'KITS:                 {KITS}                  \n'
+           f'KITS:                  {KITS}                      \n'
            '___\n'
-           f'PULMONARY:            {PULMONARY}             \n'
+           f'PULMONARY:             {PULMONARY}                 \n'
            '___\n'
-           f'ThoracicAorta_Saitta: {ThoracicAorta_Saitta}  \n'
+           f'ThoracicAorta_Saitta:  {ThoracicAorta_Saitta}      \n'
            '___\n'
-           f'CoronaryArteries:     {CoronaryArteries}      \n'
+           f'CoronaryArteries:      {CoronaryArteries}          \n'
            '___\n'
-           f'FaceVR:               {FaceVR}                \n'
+           f'FaceVR:                {FaceVR}                    \n'
            '___\n'
-           f'3DTeethSeg:           {TDTeethSeg}              ')
+
+           f'ToothFairy:            {ToothFairy}                \n'
+           '___\n'
+
+           f'AutoImplantCraniotomy: {AutoImplantCraniotomy}     \n'
+           '___\n'
+
+           f'3DTeethSeg:            {TDTeethSeg}                  '
+
+           )
 
 
     print('___basic commands___')
@@ -240,7 +320,6 @@ def download():
                 url=data_set_info['dataset']['PULMONARY']['url']
                 path = 'medshapenetcore_PULMONARY.npz'
 
-
             if sys.argv[2]== 'ThoracicAorta_Saitta':
                 url=data_set_info['dataset']['ThoracicAorta_Saitta']['url']
                 path = 'medshapenetcore_ThoracicAorta_Saitta.npz'
@@ -256,6 +335,14 @@ def download():
             if sys.argv[2]== 'FaceVR':
                 url=data_set_info['dataset']['FaceVR']['url']
                 path = 'medshapenetcore_FaceVR.npz'
+
+            if sys.argv[2]== 'AutoImplantCraniotomy':
+                url=data_set_info['dataset']['AutoImplantCraniotomy']['url']
+                path = 'medshapenetcore_AutoImplantCraniotomy.npz'
+
+            if sys.argv[2]== 'ToothFairy':
+                url=data_set_info['dataset']['ToothFairy']['url']
+                path = 'medshapenetcore_ToothFairy.npz'
 
 
             print('downloading...')
@@ -348,8 +435,6 @@ def check_available_keys():
         print('___AvailableKeys___')
         print(data_set_info['dataset']['FLARE']['avi_keys'])
 
-
-
     if sys.argv[2] == 'PULMONARY':
         PULMONARY_organs=[
                          'airway',
@@ -360,24 +445,35 @@ def check_available_keys():
         print('___AvailableKeys___')
         print(data_set_info['dataset']['PULMONARY']['avi_keys'])
 
-
     if sys.argv[2] == 'KITS':
+        print('___AvailableKeys___')
         print(data_set_info['dataset']['PULMONARY']['avi_keys'])
         
-
     if sys.argv[2] == 'ThoracicAorta_Saitta':
+        print('___AvailableKeys___')
         print(data_set_info['dataset']['ThoracicAorta_Saitta']['avi_keys'])
 
-
     if sys.argv[2] == 'CoronaryArteries':
+        print('___AvailableKeys___')
         print(data_set_info['dataset']['CoronaryArteries']['avi_keys'])
 
     if sys.argv[2] == '3DTeethSeg':
+        print('___AvailableKeys___')
         print(data_set_info['dataset']['3DTeethSeg']['avi_keys'])
 
     if sys.argv[2] == 'FaceVR':
+        print('___AvailableKeys___')
         print(data_set_info['dataset']['FaceVR']['avi_keys'])
         
+    if sys.argv[2] == 'AutoImplantCraniotomy':
+        print('___AvailableKeys___')
+        print(data_set_info['dataset']['AutoImplantCraniotomy']['avi_keys'])
+
+    if sys.argv[2] == 'ToothFairy':
+        print('___AvailableKeys___')
+        print(data_set_info['dataset']['ToothFairy']['avi_keys'])
+
+
 
 if __name__ == "__main__":
     import fire

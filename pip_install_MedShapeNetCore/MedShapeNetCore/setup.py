@@ -25,6 +25,7 @@ setup(
     install_requires=[
         "numpy",
         "pandas",
+        "pathlib",
         "scikit-learn",
         "scikit-image",
         "tqdm",
