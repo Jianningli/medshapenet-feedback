@@ -20,7 +20,7 @@ data_set_info={
     'contact':'Jianning Li, jianningli.me@gmail.com',
     'version': f'MedShapeNetCore v{MedShapeNetCore.__version__}',
     'dataset': {               
-               'ASOCA':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_ASOCA.npz?download=1',
+               'ASOCA':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_ASOCA.npz?download=1',
                         'size':'41.8Mb',
                         'link':'https://asoca.grand-challenge.org/',
                         'information': 'coronary arteries',
@@ -35,7 +35,7 @@ data_set_info={
                         },
 
 
-               'FLARE':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_FLARE.npz?download=1',
+               'FLARE':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_FLARE.npz?download=1',
                         'size':'555Mb',
                         'link':'https://flare.grand-challenge.org/',
                         'information': 'abdominal organs',
@@ -49,7 +49,7 @@ data_set_info={
                         },
 
 
-               'KITS':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_KITS.npz?download=1',
+               'KITS':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_KITS.npz?download=1',
                         'size':'401Mb',
                         'link':'https://kits-challenge.org/kits23/',
                         'information': 'kidney and kidney tumor',
@@ -64,7 +64,7 @@ data_set_info={
                         },
 
 
-               'PULMONARY':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_PULMONARY.npz?download=1',
+               'PULMONARY':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_PULMONARY.npz?download=1',
                         'size':'1.14Gb',
                         'link':'https://arxiv.org/pdf/2309.17329.pdf',
                         'information': 'pulmonary arteries, including the airway,artery, vein',
@@ -78,7 +78,7 @@ data_set_info={
                         },
 
 
-               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
+               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
                         'size':'515.57Mb',
                         'link':'https://pubmed.ncbi.nlm.nih.gov/35083618/',
                         'information': 'thoracic aorta with arch branches',
@@ -92,7 +92,7 @@ data_set_info={
                         },
 
 
-               'CoronaryArteries':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_CoronaryArteries.npz?download=1',
+               'CoronaryArteries':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_CoronaryArteries.npz?download=1',
                         'size':'677.02Mb',
                         'link':'https://pubs.aip.org/aip/apb/article/8/1/016103/3061557/A-fully-automated-deep-learning-approach-for',
                         'information': 'coronary arteries',
@@ -105,7 +105,7 @@ data_set_info={
                                     ]
                         },
 
-               '3DTeethSeg':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_3DTeethSeg.npz?download=1',
+               '3DTeethSeg':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_3DTeethSeg.npz?download=1',
                         'size':'3.7Gb',
                         'link':'https://github.com/abenhamadou/3DTeethSeg22_challenge',
                         'information': '3D teeth labeling and semantic segmentation',
@@ -116,7 +116,7 @@ data_set_info={
                                     ]
                         },
 
-               'FaceVR':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_FaceVR.npz?download=1',
+               'FaceVR':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_FaceVR.npz?download=1',
                         'size':'14.9Mb',
                         'link':'https://figshare.com/articles/dataset/Medical_Augmented_Reality_Facial_Data_Collection/8857007/2',
                         'information': '3D facial models for VR',
@@ -128,7 +128,7 @@ data_set_info={
                                     ]
                         },
 
-               'ToothFairy':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_ToothFairy.npz?download=1',
+               'ToothFairy':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_ToothFairy.npz?download=1',
                         'size':'145.94Mb',
                         'link':'https://toothfairychallenges.github.io/',
                         'information': 'inferior alveolar nerve segmentations',
@@ -141,7 +141,7 @@ data_set_info={
                                     ]
                         },
 
-               'AutoImplantCraniotomy':{'url':'https://zenodo.org/records/10609965/files/medshapenetcore_AutoImplantCraniotomy.npz?download=1',
+               'AutoImplantCraniotomy':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_AutoImplantCraniotomy.npz?download=1',
                         'size':'6.41Mb',
                         'link':'https://autoimplant2021.grand-challenge.org/',
                         'information': 'skull reconstruction and cranial implant design',
@@ -149,8 +149,20 @@ data_set_info={
                         'avi_keys':[
                                     'mask'
                                     ]
-                        }
+                        },
 
+               'SurgicalInstruments':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_SurgicalInstruments.npz?download=1',
+                        'size':'5.30Mb',
+                        'link':'https://www.nature.com/articles/s41597-023-02684-0',
+                        'information': '3D surgical instrument models',
+                        'organs_key_words':'surgical, surgery, instruments, instrument',
+                        'avi_keys':[
+                                    'mask->sample index',
+                                    'point->sample index',
+                                    'mesh->vertices->sample index',
+                                    'mesh->faces->sample index'
+                                    ]
+                        }
 
                 },
 
@@ -159,7 +171,7 @@ data_set_info={
                  'python -m MedShapeNetCore clean',
                  'python -m MedShapeNetCore check_available_keys DARASET',
                  'python -m MedShapeNetCore search_by_organ ORGAN',
-                 'python -m test search_and_download ORGAN'                
+                 'python -m MedShapeNetCore search_and_download ORGAN'                
     ]
 
 }
@@ -223,7 +235,7 @@ def search_and_download():
             counter+=1
             with open(filename, 'wb') as f:
                 f.write(r.content)
-        print('Download complete! Files are stored in folder stls')
+        print(f'Download complete! Files are stored in folder {save_folder}')
         if os.path.exists('./temp/'):
             shutil.rmtree('./temp/')
 
@@ -252,6 +264,7 @@ def info():
     FaceVR=data_set_info['dataset']['FaceVR']
     ToothFairy=data_set_info['dataset']['ToothFairy']
     AutoImplantCraniotomy=data_set_info['dataset']['AutoImplantCraniotomy']
+    SurgicalInstruments=data_set_info['dataset']['SurgicalInstruments'] 
 
     print(
            f'ASOCA:                 {ASOCA}                     \n'
@@ -273,6 +286,9 @@ def info():
            '___\n'
 
            f'AutoImplantCraniotomy: {AutoImplantCraniotomy}     \n'
+           '___\n'
+
+           f'SurgicalInstruments:   {SurgicalInstruments}        \n'
            '___\n'
 
            f'3DTeethSeg:            {TDTeethSeg}                  '
@@ -343,6 +359,10 @@ def download():
             if sys.argv[2]== 'ToothFairy':
                 url=data_set_info['dataset']['ToothFairy']['url']
                 path = 'medshapenetcore_ToothFairy.npz'
+
+            if sys.argv[2]== 'SurgicalInstruments':
+                url=data_set_info['dataset']['SurgicalInstruments']['url']
+                path = 'medshapenetcore_SurgicalInstruments.npz'
 
 
             print('downloading...')
@@ -469,10 +489,13 @@ def check_available_keys():
         print('___AvailableKeys___')
         print(data_set_info['dataset']['AutoImplantCraniotomy']['avi_keys'])
 
-    if sys.argv[2] == 'ToothFairy':
+    if sys.argv[2] == 'ToothFairy':  
         print('___AvailableKeys___')
         print(data_set_info['dataset']['ToothFairy']['avi_keys'])
 
+    if sys.argv[2] == 'SurgicalInstruments': 
+        print('___AvailableKeys___')
+        print(data_set_info['dataset']['SurgicalInstruments']['avi_keys'])
 
 
 if __name__ == "__main__":
