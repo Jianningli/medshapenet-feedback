@@ -20,8 +20,10 @@ data_set_info={
     'contact':'Jianning Li, jianningli.me@gmail.com',
     'version': f'MedShapeNetCore v{MedShapeNetCore.__version__}',
     'dataset': {               
-               'ASOCA':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_ASOCA.npz?download=1',
+               'ASOCA':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_ASOCA.npz?download=1',
                         'size':'41.8Mb',
+                        'num_sample':'40',
+                        'disease':'coronary artery disease,CAD,atherosclerosis,plaque',
                         'link':'https://asoca.grand-challenge.org/',
                         'information': 'coronary arteries',
                         'organs_key_words':'coronary arteries,artery',
@@ -35,8 +37,10 @@ data_set_info={
                         },
 
 
-               'FLARE':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_FLARE.npz?download=1',
+               'FLARE':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_FLARE.npz?download=1',
                         'size':'555Mb',
+                        'num_sample':'650',
+                        'disease':' ',
                         'link':'https://flare.grand-challenge.org/',
                         'information': 'abdominal organs',
                         'organs_key_words':  'liver,kidney,spleen,pancreas,aorta,inferior vena cava,adrenal gland,gallbladder,esophagus,stomach,duodenum',
@@ -49,8 +53,10 @@ data_set_info={
                         },
 
 
-               'KITS':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_KITS.npz?download=1',
+               'KITS':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_KITS.npz?download=1',
                         'size':'401Mb',
+                        'num_sample':'489',
+                        'disease':'tumor,tumour',
                         'link':'https://kits-challenge.org/kits23/',
                         'information': 'kidney and kidney tumor',
                         'organs_key_words':'kidney,tumor',
@@ -64,11 +70,13 @@ data_set_info={
                         },
 
 
-               'PULMONARY':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_PULMONARY.npz?download=1',
+               'PULMONARY':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_PULMONARY.npz?download=1',
                         'size':'1.14Gb',
+                        'num_sample':'2397',
+                        'disease':' ',
                         'link':'https://arxiv.org/pdf/2309.17329.pdf',
                         'information': 'pulmonary arteries, including the airway,artery, vein',
-                        'organs_key_words':'pulmonary arteries, airway,artery,vein',
+                        'organs_key_words':'pulmonary arteries, airway,artery,vein,lung',
                         'avi_keys':[
                                     'organ->mask',
                                     'orgna->point',
@@ -78,8 +86,10 @@ data_set_info={
                         },
 
 
-               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
+               'ThoracicAorta_Saitta':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_ThoracicAorta_Saitta.npz?download=1',
                         'size':'515.57Mb',
+                        'num_sample':'500',
+                        'disease':'thoracic aortic aneurysm',
                         'link':'https://pubmed.ncbi.nlm.nih.gov/35083618/',
                         'information': 'thoracic aorta with arch branches',
                         'organs_key_words':'thoracic aorta',
@@ -92,8 +102,10 @@ data_set_info={
                         },
 
 
-               'CoronaryArteries':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_CoronaryArteries.npz?download=1',
+               'CoronaryArteries':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_CoronaryArteries.npz?download=1',
                         'size':'677.02Mb',
+                        'num_sample':'544',
+                        'disease':'coronary artery calcium,CAC,tortuosity',
                         'link':'https://pubs.aip.org/aip/apb/article/8/1/016103/3061557/A-fully-automated-deep-learning-approach-for',
                         'information': 'coronary arteries',
                         'organs_key_words':'coronary arteries, artery',
@@ -105,8 +117,10 @@ data_set_info={
                                     ]
                         },
 
-               '3DTeethSeg':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_3DTeethSeg.npz?download=1',
+               '3DTeethSeg':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_3DTeethSeg.npz?download=1',
                         'size':'3.7Gb',
+                        'num_sample':'1800',
+                        'disease':' ',
                         'link':'https://github.com/abenhamadou/3DTeethSeg22_challenge',
                         'information': '3D teeth labeling and semantic segmentation',
                         'organs_key_words':'teeth,tooth',
@@ -116,11 +130,13 @@ data_set_info={
                                     ]
                         },
 
-               'FaceVR':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_FaceVR.npz?download=1',
+               'FaceVR':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_FaceVR.npz?download=1',
                         'size':'14.9Mb',
+                        'num_sample':'11',
+                        'disease':' ',
                         'link':'https://figshare.com/articles/dataset/Medical_Augmented_Reality_Facial_Data_Collection/8857007/2',
                         'information': '3D facial models for VR',
-                        'organs_key_words':'face, facial',
+                        'organs_key_words':'face,facial',
                         'avi_keys':[
                                     'point',
                                     'mesh->vertices',
@@ -128,11 +144,13 @@ data_set_info={
                                     ]
                         },
 
-               'ToothFairy':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_ToothFairy.npz?download=1',
+               'ToothFairy':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_ToothFairy.npz?download=1',
                         'size':'145.94Mb',
+                        'num_sample':'153',
+                        'disease':' ',
                         'link':'https://toothfairychallenges.github.io/',
                         'information': 'inferior alveolar nerve segmentations',
-                        'organs_key_words':'maxillofacial,teeth, tooth,inferior alveolar nerve',
+                        'organs_key_words':'maxillofacial,teeth,tooth,inferior alveolar nerve',
                         'avi_keys':[
                                     'mask->sample index',
                                     'point->sample index',
@@ -141,8 +159,10 @@ data_set_info={
                                     ]
                         },
 
-               'AutoImplantCraniotomy':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_AutoImplantCraniotomy.npz?download=1',
+               'AutoImplantCraniotomy':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_AutoImplantCraniotomy.npz?download=1',
                         'size':'6.41Mb',
+                        'num_sample':'11',
+                        'disease':'cranial defect,craniotomy',
                         'link':'https://autoimplant2021.grand-challenge.org/',
                         'information': 'skull reconstruction and cranial implant design',
                         'organs_key_words':'skull,craniotomy',
@@ -151,8 +171,25 @@ data_set_info={
                                     ]
                         },
 
-               'SurgicalInstruments':{'url':'https://zenodo.org/records/10617451/files/medshapenetcore_SurgicalInstruments.npz?download=1',
+               'AVT':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_AVT.npz?download=1',
+                        'size':'115.37Mb',
+                        'num_sample':'42',
+                        'disease':' ',
+                        'link':'https://pubmed.ncbi.nlm.nih.gov/35059483/',
+                        'information': 'aortic vessel tree',
+                        'organs_key_words':'aorta,vessel,vessels,tree',
+                        'avi_keys':[
+                                    'mask->sample index',
+                                    'point->sample index',
+                                    'mesh->vertices->sample index',
+                                    'mesh->faces->sample index'
+                                    ]
+                        },
+
+               'SurgicalInstruments':{'url':'https://zenodo.org/records/10623506/files/medshapenetcore_SurgicalInstruments.npz?download=1',
                         'size':'5.30Mb',
+                        'num_sample':'106',
+                        'disease':' ',
                         'link':'https://www.nature.com/articles/s41597-023-02684-0',
                         'information': '3D surgical instrument models',
                         'organs_key_words':'surgical, surgery, instruments, instrument',
@@ -171,14 +208,21 @@ data_set_info={
                  'python -m MedShapeNetCore clean',
                  'python -m MedShapeNetCore check_available_keys DARASET',
                  'python -m MedShapeNetCore search_by_organ ORGAN',
+                 'python -m MedShapeNetCore search_by_disease DISEASE',
                  'python -m MedShapeNetCore search_and_download ORGAN'                
     ]
 
 }
 
-
     
 def search_by_organ():
+    
+    """
+    Search the MedShapeNetCore database using 
+    organ keywords, such as liver. Abbrevations
+    are supported.
+    """
+
     organ=sys.argv[2] 
     datasets=list(data_set_info['dataset'].keys())
     get_datasets=[]
@@ -202,11 +246,55 @@ def search_by_organ():
 
         for data_set in datasets:
             print(data_set_info['dataset'][data_set]['organs_key_words'])
+    print('______function description______:')
+    help(search_by_organ)
 
 
+
+
+
+def search_by_disease():
+
+    """
+    Search the MedShapeNetCore database using
+    disease keywords, such as tumor. Abbrevations
+    are supported.
+    """
+    disease=sys.argv[2] 
+    datasets=list(data_set_info['dataset'].keys())
+    get_datasets=[]
+    for data_set in datasets:
+        if disease in data_set_info['dataset'][data_set]['disease']:
+            get_datasets.append(data_set)
+
+    if len(get_datasets)!=0:
+        print(
+            f'the following dataset(s): {get_datasets} contain(s) {disease}  \n'
+            f'download {get_datasets} using the following command:         \n'
+            f'python -m MedShapeNetCore download {get_datasets}'
+            )
+
+    else:
+        print(
+            f'{disease} not found in the MedShapeNetCore  \n'
+            'current availale diseases are:             \n'
+            '_____________'
+            )
+
+        for data_set in datasets:
+            print(data_set_info['dataset'][data_set]['disease'])
+    print('______function description______:')
+    help(search_by_disease)
 
 
 def search_and_download():
+
+    """
+    Search the online MedShapeNet database  
+    using organ nomenclature, such as liver,
+    and download the corresponding .stl files
+    """
+
     if not os.path.exists('./temp/'):
         os.mkdir('./temp/')
     r = requests.get("https://medshapenet.ikim.nrw/uploads/MedShapeNetDataset.txt", stream=True)
@@ -228,6 +316,7 @@ def search_and_download():
             Path(save_folder).mkdir(parents=True, exist_ok=True)
         print(f'found {len(matched_urls)} entries of {sys.argv[2]}, started downloading... files are saved in folder {save_folder}')
         counter=0
+        print('_________ urls:')
         for url in matched_urls:
             print(url)
             r = requests.get(url.strip(), stream=True)
@@ -239,13 +328,18 @@ def search_and_download():
         if os.path.exists('./temp/'):
             shutil.rmtree('./temp/')
 
-
-
-
-
+    print('______function description______:')
+    help(search_and_download)
 
 
 def info():
+
+    """
+    Display the general information about MedShapeNetCore,
+    including the currently available commands, datasets and
+    their descriptions, and the number of samples
+    """
+
     print('___GeneralInfo___')
 
     print(f'MedShapeNetCore v{MedShapeNetCore.__version__}')
@@ -265,7 +359,7 @@ def info():
     ToothFairy=data_set_info['dataset']['ToothFairy']
     AutoImplantCraniotomy=data_set_info['dataset']['AutoImplantCraniotomy']
     SurgicalInstruments=data_set_info['dataset']['SurgicalInstruments'] 
-
+    AVT=data_set_info['dataset']['AVT'] 
     print(
            f'ASOCA:                 {ASOCA}                     \n'
            '___\n'
@@ -290,20 +384,35 @@ def info():
 
            f'SurgicalInstruments:   {SurgicalInstruments}        \n'
            '___\n'
-
+           f'AVT:                   {AVT}                        \n'
+           '___\n'
            f'3DTeethSeg:            {TDTeethSeg}                  '
 
            )
+
+    counter=0
+    for keys in list(data_set_info['dataset'].keys()):
+        counter+=int(data_set_info['dataset'][keys]['num_sample'])
+
+    print('_____')
+    print('number of datasets:',len(list(list(data_set_info['dataset'].keys()))))
+    print('total number of samples:', counter)
 
 
     print('___basic commands___')
 
     print(data_set_info['commands'])
 
-
+    print('______function description______:')
+    help(info)
 
 
 def download():
+
+    """
+    Download the .npz file(s) to be used in Python.
+    """
+
     if not os.path.exists('./medshapenetcore_npz/'):
         os.mkdir('./medshapenetcore_npz/')
     available_datasets=list(data_set_info['dataset'].keys())
@@ -364,6 +473,10 @@ def download():
                 url=data_set_info['dataset']['SurgicalInstruments']['url']
                 path = 'medshapenetcore_SurgicalInstruments.npz'
 
+            if sys.argv[2]== 'AVT':
+                url=data_set_info['dataset']['AVT']['url']
+                path = 'medshapenetcore_AVT.npz'
+
 
             print('downloading...')
             save_dir='./medshapenetcore_npz/'+path
@@ -387,21 +500,32 @@ def download():
                        )
 
                 raise RuntimeError()
-
+    print('______function description______:')
+    help(download)
 
 
 
 def clean():
+    """
+    Deleting all files generated by MedShapeNet, including
+    temporary files and the downloaded .npz files.
+    """
     print('deleting all files generated by MedShapeNet...')
     if os.path.exists('./medshapenetcore_npz/'):
         shutil.rmtree('./medshapenetcore_npz/')
 
     if os.path.exists('./medshapenetcore_saved/'):
         shutil.rmtree('./medshapenetcore_saved/')
-
+    print('______function description______:')
+    help(clean)
 
 
 def check_available_keys():
+    """
+    Check the available keys in each dataset formatted as .npz
+    files. 
+    """
+
     available_datasets=list(data_set_info['dataset'].keys())
     if not (sys.argv[2] in available_datasets):
 
@@ -496,6 +620,14 @@ def check_available_keys():
     if sys.argv[2] == 'SurgicalInstruments': 
         print('___AvailableKeys___')
         print(data_set_info['dataset']['SurgicalInstruments']['avi_keys'])
+
+    if sys.argv[2] == 'AVT': 
+        print('___AvailableKeys___')
+        print(data_set_info['dataset']['AVT']['avi_keys'])
+
+    print('______function description______:')
+    help(check_available_keys)
+
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-__version__ = "0.1.9"
+__version__ = "0.1.10"
 
 import numpy as np
 import trimesh
