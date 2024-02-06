@@ -3,6 +3,7 @@
 MedShapeNetCore is a subset of [MedShapeNet](https://arxiv.org/abs/2308.16139), containing more lightweight 3D anatomical shapes in the format of mask, point cloud and mesh. The shape data are stored as numpy arrays in nested dictonaries in *npz* format ([Zenodo](https://zenodo.org/records/10423181)).
 This API provides means to downloading, accessing and processing the shape data via Python, which integrates MedShapeNetCore seamless into Python-based machine learning workflows.
 
+Check out [Show case](https://github.com/Jianningli/medshapenet-feedback/blob/main/pip_install_MedShapeNetCore/examples/MedShapeNetShowCase.ipynb) for the latest update.
 
 ## Installation (Python >=3.8, [Release page](https://pypi.org/project/MedShapeNetCore/)) 
 
