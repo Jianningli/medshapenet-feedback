@@ -1,4 +1,4 @@
-__version__ = "0.1.11"
+__version__ = "0.1.12"
 
 import numpy as np
 import trimesh
@@ -28,7 +28,9 @@ data_original={
     'facialVR':'https://files.icg.tugraz.at/f/33c88e8c4c5c414c8ca7/?dl=1',
     'VAT':'https://files.icg.tugraz.at/f/30c753ebdd9e4f6a8ee6/?dl=1',
     'ThoracicAorta_Saitta':'https://files.icg.tugraz.at/f/7fff5da8efb74fe8b14f/?dl=1',
-    'CoronaryArteries':'https://files.icg.tugraz.at/f/c9b7552cc88c4e549ec6/?dl=1'
+    'CoronaryArteries':'https://files.icg.tugraz.at/f/c9b7552cc88c4e549ec6/?dl=1',
+    'SurgicalInstruments':'https://files.icg.tugraz.at/f/0daa2d6c161a47b693a4/?dl=1',
+    'ToothFairy':'https://files.icg.tugraz.at/f/bdfa7c6cc12a4bdeb6fe/?dl=1'
 }
 
 
@@ -207,8 +209,8 @@ class MSNLoader(object):
 	                        counter+=1
 	                    else:
 	                        break
+	            data_set=[]
 	            if len(data_list)!=0:
-	                data_set=[]
 	                for file in data_list:
 	                    if formats=='mask':
 	                        data = sitk.ReadImage(file)
@@ -225,11 +227,11 @@ class MSNLoader(object):
 	                        }
 	                    data_set.append(data)
 
-	                if len(data_list)==0:
-	                    raise Exception(
-	                        f"dataset {dataset} has now format {formats}, "
-	                        "please try another format"
-	                        )
+	            else:
+	            	raise Exception(
+                        f"dataset {dataset} has no format {formats}, "
+                        "please try another format"
+                        )
 	    else:
 	        raise RuntimeError(
 	            f"accessing dataset {dataset} failed,"
