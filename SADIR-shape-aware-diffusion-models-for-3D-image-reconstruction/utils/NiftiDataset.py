@@ -300,7 +300,7 @@ def flipit(image, axes):
     img.SetOrigin(origin)
     img.SetSpacing(spacing)
 
-    return image
+    return img
 
 
 def brightness(image):
